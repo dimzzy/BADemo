@@ -30,6 +30,7 @@
 #import "BAPageControlViewController.h"
 #import "BAProgressViewController.h"
 #import "BAActivityViewController.h"
+#import "BAFormViewController.h"
 
 @implementation BADemoViewController
 
@@ -38,7 +39,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 3;
+	return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -55,6 +56,9 @@
 			break;
 		case 2:
 			cell.textLabel.text = @"Activity View";
+			break;
+		case 3:
+			cell.textLabel.text = @"Form";
 			break;
 	}
 	return cell;
@@ -81,6 +85,13 @@
 		case 2: {
 			BAActivityViewController *controller = [[[BAActivityViewController alloc] initWithNibName:@"BAActivityViewController"
 																							   bundle:nil] autorelease];
+			controller.navigationItem.title = title;
+			[self.navigationController pushViewController:controller animated:YES];
+			break;
+		}
+		case 3: {
+			BAFormViewController *controller = [[[BAFormViewController alloc] initWithNibName:@"BAFormViewController"
+																					   bundle:nil] autorelease];
 			controller.navigationItem.title = title;
 			[self.navigationController pushViewController:controller animated:YES];
 			break;
