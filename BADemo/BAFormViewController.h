@@ -30,7 +30,7 @@
 #import "BAFormProvider.h"
 #import "BAKeyboardTracker.h"
 
-@interface BAFormViewController : UIViewController {
+@interface BAFormViewController : UIViewController <BAFormProviderDelegate> {
 @private
 	BAKeyboardTracker *_keyboardTracker;
 	UITableView *_tableView;

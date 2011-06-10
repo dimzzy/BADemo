@@ -64,6 +64,7 @@
 - (BAFormProvider *)provider {
 	if (!_provider) {
 		_provider = [[BAFormProvider alloc] init];
+		_provider.delegate = self;
 		BAFormSectionDescriptor *sd1 = [[[BAFormSectionDescriptor alloc] init] autorelease];
 		sd1.header = @"User";
 		[_provider.sectionDescriptors addObject:sd1];
@@ -101,8 +102,34 @@
 			fd.type = BAFormFieldTypeText;
 			[sd2.fieldDescriptors addObject:fd];
 		}
+		{
+			BAFormFieldDescriptor *fd = [[[BAFormFieldDescriptor alloc] init] autorelease];
+			fd.identifier = @"action";
+			fd.name = @"Action:";
+			fd.placeholder = @"Run";
+			fd.type = BAFormFieldTypeButton;
+			[sd2.fieldDescriptors addObject:fd];
+		}
 	}
 	return _provider;
+}
+
+- (void)action {
+	[[[[UIAlertView alloc] initWithTitle:@"Action"
+								 message:@"Form Action"
+								delegate:nil
+					   cancelButtonTitle:@"OK"
+					   otherButtonTitles:nil] autorelease] show];
+}
+
+- (void)decorateButtonFieldCell:(BAFormButtonFieldCell *)cell
+					 descriptor:(BAFormFieldDescriptor *)descriptor
+					  tableView:(UITableView *)tableView
+{
+	UIImage *image = [[UIImage imageNamed:@"form-button.png"] stretchableImageWithLeftCapWidth:15 topCapHeight:15];
+	[cell.fieldButton setBackgroundImage:image forState:UIControlStateNormal];
+	cell.fieldButton.titleLabel.textColor = [UIColor whiteColor];
+	[cell.fieldButton addTarget:self action:@selector(action) forControlEvents:UIControlEventTouchUpInside];
 }
 
 @end

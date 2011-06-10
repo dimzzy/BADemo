@@ -23,6 +23,9 @@
 		1F6D31AE138E959600DEA7FE /* BAXMLParserBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6D31AC138E959600DEA7FE /* BAXMLParserBase.m */; };
 		1F6D31B4138E970000DEA7FE /* BAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6D31B1138E96FF00DEA7FE /* BAPageControl.m */; };
 		1F6D31B5138E970000DEA7FE /* BARemoteImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6D31B3138E970000DEA7FE /* BARemoteImageView.m */; };
+		1F75710613A237900015AA92 /* BAFormButtonFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F75710413A237900015AA92 /* BAFormButtonFieldCell.m */; };
+		1F75710713A237900015AA92 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 1F75710513A237900015AA92 /* README */; };
+		1F75710A13A239450015AA92 /* form-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F75710913A239450015AA92 /* form-button.png */; };
 		1F7F0FE4138EED8100E62046 /* BAPageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F0FE2138EED8100E62046 /* BAPageControlViewController.m */; };
 		1F7F0FE5138EED8100E62046 /* BAPageControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F7F0FE3138EED8100E62046 /* BAPageControlViewController.xib */; };
 		1F7F0FED138EF27F00E62046 /* BAHyperHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F0FE8138EF27F00E62046 /* BAHyperHandler.m */; };
@@ -89,6 +92,10 @@
 		1F6D31B1138E96FF00DEA7FE /* BAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPageControl.m; sourceTree = "<group>"; };
 		1F6D31B2138E96FF00DEA7FE /* BARemoteImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BARemoteImageView.h; sourceTree = "<group>"; };
 		1F6D31B3138E970000DEA7FE /* BARemoteImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BARemoteImageView.m; sourceTree = "<group>"; };
+		1F75710313A237900015AA92 /* BAFormButtonFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAFormButtonFieldCell.h; sourceTree = "<group>"; };
+		1F75710413A237900015AA92 /* BAFormButtonFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAFormButtonFieldCell.m; sourceTree = "<group>"; };
+		1F75710513A237900015AA92 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		1F75710913A239450015AA92 /* form-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "form-button.png"; sourceTree = "<group>"; };
 		1F7F0FE1138EED8100E62046 /* BAPageControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPageControlViewController.h; sourceTree = "<group>"; };
 		1F7F0FE2138EED8100E62046 /* BAPageControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPageControlViewController.m; sourceTree = "<group>"; };
 		1F7F0FE3138EED8100E62046 /* BAPageControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAPageControlViewController.xib; sourceTree = "<group>"; };
@@ -184,6 +191,7 @@
 				1F8E7F17139FA49600D99164 /* BAFormViewController.m */,
 				1F8E7F19139FA4BA00D99164 /* BAFormViewController.xib */,
 				1F4B38DD138E704D003FE58C /* BADemo-Prefix.pch */,
+				1F75710913A239450015AA92 /* form-button.png */,
 				1F4B38DE138E704D003FE58C /* InfoPlist.strings */,
 				1F4B38E0138E704D003FE58C /* Info.plist */,
 				1F4B38E1138E704D003FE58C /* main.m */,
@@ -204,6 +212,8 @@
 				1F8E7F14139F92E700D99164 /* BAFormLabelFieldCell.m */,
 				1F8E7F0F139F916200D99164 /* BAFormTextFieldCell.h */,
 				1F8E7F10139F916200D99164 /* BAFormTextFieldCell.m */,
+				1F75710313A237900015AA92 /* BAFormButtonFieldCell.h */,
+				1F75710413A237900015AA92 /* BAFormButtonFieldCell.m */,
 				1F5959E9139F677C003B0C01 /* BAFormProvider.h */,
 				1F5959EA139F677C003B0C01 /* BAFormProvider.m */,
 			);
@@ -270,6 +280,7 @@
 		1F980054138E892700B91C2C /* BaseAppKit */ = {
 			isa = PBXGroup;
 			children = (
+				1F75710513A237900015AA92 /* README */,
 				1F6C8F3B139E733200DA3270 /* Core */,
 				1F6C8F3A139E732800DA3270 /* UI */,
 				1F5959E7139F6744003B0C01 /* Forms */,
@@ -389,6 +400,8 @@
 				1FE78BD71396988800B35BDE /* build.sh in Resources */,
 				1F6C8F35139E730100DA3270 /* BAActivityViewController.xib in Resources */,
 				1F8E7F1A139FA4BA00D99164 /* BAFormViewController.xib in Resources */,
+				1F75710713A237900015AA92 /* README in Resources */,
+				1F75710A13A239450015AA92 /* form-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +447,7 @@
 				1F8E7F15139F92E700D99164 /* BAFormLabelFieldCell.m in Sources */,
 				1F8E7F18139FA49600D99164 /* BAFormViewController.m in Sources */,
 				1F8E7F21139FC2D500D99164 /* BAKeyboardTracker.m in Sources */,
+				1F75710613A237900015AA92 /* BAFormButtonFieldCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
