@@ -27,6 +27,7 @@
 */
 
 #import "BAFormViewController.h"
+#import "BAAlert.h"
 
 @implementation BAFormViewController
 
@@ -115,11 +116,7 @@
 }
 
 - (void)action {
-	[[[[UIAlertView alloc] initWithTitle:@"Action"
-								 message:@"Form Action"
-								delegate:nil
-					   cancelButtonTitle:@"OK"
-					   otherButtonTitles:nil] autorelease] show];
+	BAAlert(@"Action", @"FormAction");
 }
 
 - (void)decorateButtonFieldCell:(BAFormButtonFieldCell *)cell
