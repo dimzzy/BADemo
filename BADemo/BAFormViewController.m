@@ -27,7 +27,7 @@
 */
 
 #import "BAFormViewController.h"
-#import "BAAlert.h"
+#import "BACommon.h"
 
 @implementation BAFormViewController
 

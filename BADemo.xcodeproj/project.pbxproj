@@ -96,7 +96,6 @@
 		1F75710413A237900015AA92 /* BAFormButtonFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAFormButtonFieldCell.m; sourceTree = "<group>"; };
 		1F75710513A237900015AA92 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		1F75710913A239450015AA92 /* form-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "form-button.png"; sourceTree = "<group>"; };
-		1F75711313A23B2F0015AA92 /* BAAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAlert.h; sourceTree = "<group>"; };
 		1F7F0FE1138EED8100E62046 /* BAPageControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPageControlViewController.h; sourceTree = "<group>"; };
 		1F7F0FE2138EED8100E62046 /* BAPageControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPageControlViewController.m; sourceTree = "<group>"; };
 		1F7F0FE3138EED8100E62046 /* BAPageControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAPageControlViewController.xib; sourceTree = "<group>"; };
@@ -152,6 +151,7 @@
 		1FC7B7ED138E592800900EA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1FC7B7EF138E592800900EA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FC7B7F1138E592800900EA2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1FD6286813AA51C000D269EB /* BACommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACommon.h; sourceTree = "<group>"; };
 		1FE78BD41396988800B35BDE /* BADemo_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = BADemo_AdHoc.mobileprovision; sourceTree = "<group>"; };
 		1FE78BD51396988800B35BDE /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,6 +224,7 @@
 		1F6C8F3A139E732800DA3270 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1FD6286813AA51C000D269EB /* BACommon.h */,
 				1F7F0FFC138EFF1200E62046 /* UINavigationController+BATransitions.h */,
 				1F7F0FFD138EFF1200E62046 /* UINavigationController+BATransitions.m */,
 				1F7F0FFE138EFF1200E62046 /* UITableView+BALoading.h */,
@@ -247,7 +248,6 @@
 				1F6C8F38139E731900DA3270 /* BAActivityView.m */,
 				1F8E7F1F139FC2D500D99164 /* BAKeyboardTracker.h */,
 				1F8E7F20139FC2D500D99164 /* BAKeyboardTracker.m */,
-				1F75711313A23B2F0015AA92 /* BAAlert.h */,
 			);
 			name = UI;
 			sourceTree = "<group>";
