@@ -12,6 +12,10 @@
 		1F4B38E6138E704D003FE58C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F4B38DE138E704D003FE58C /* InfoPlist.strings */; };
 		1F4B38E8138E704D003FE58C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B38E1138E704D003FE58C /* main.m */; };
 		1F4B38E9138E704D003FE58C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4B38E2138E704D003FE58C /* MainWindow.xib */; };
+		1F56246F13B243A2004DF703 /* BAFormInputSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56246C13B243A2004DF703 /* BAFormInputSupport.m */; };
+		1F56247013B243A2004DF703 /* BAGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56246E13B243A2004DF703 /* BAGradientView.m */; };
+		1F56247513B243DF004DF703 /* BAGradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56247313B243DF004DF703 /* BAGradientViewController.m */; };
+		1F56247613B243DF004DF703 /* BAGradientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F56247413B243DF004DF703 /* BAGradientViewController.xib */; };
 		1F5959EB139F677C003B0C01 /* BAFormProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5959EA139F677C003B0C01 /* BAFormProvider.m */; };
 		1F5959EE139F67F9003B0C01 /* BAFormSectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5959ED139F67F9003B0C01 /* BAFormSectionDescriptor.m */; };
 		1F5959F1139F6940003B0C01 /* BAFormFieldDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5959F0139F6940003B0C01 /* BAFormFieldDescriptor.m */; };
@@ -71,6 +75,13 @@
 		1F4B38E0138E704D003FE58C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F4B38E1138E704D003FE58C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F4B38E2138E704D003FE58C /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		1F56246B13B243A2004DF703 /* BAFormInputSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAFormInputSupport.h; sourceTree = "<group>"; };
+		1F56246C13B243A2004DF703 /* BAFormInputSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAFormInputSupport.m; sourceTree = "<group>"; };
+		1F56246D13B243A2004DF703 /* BAGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAGradientView.h; sourceTree = "<group>"; };
+		1F56246E13B243A2004DF703 /* BAGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAGradientView.m; sourceTree = "<group>"; };
+		1F56247213B243DF004DF703 /* BAGradientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAGradientViewController.h; sourceTree = "<group>"; };
+		1F56247313B243DF004DF703 /* BAGradientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAGradientViewController.m; sourceTree = "<group>"; };
+		1F56247413B243DF004DF703 /* BAGradientViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAGradientViewController.xib; sourceTree = "<group>"; };
 		1F5959E9139F677C003B0C01 /* BAFormProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAFormProvider.h; sourceTree = "<group>"; };
 		1F5959EA139F677C003B0C01 /* BAFormProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAFormProvider.m; sourceTree = "<group>"; };
 		1F5959EC139F67F9003B0C01 /* BAFormSectionDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAFormSectionDescriptor.h; sourceTree = "<group>"; };
@@ -174,11 +185,25 @@
 		1F4B38D7138E704D003FE58C /* BADemo */ = {
 			isa = PBXGroup;
 			children = (
+				1F56247713B243EA004DF703 /* UI */,
+				1F56247813B24403004DF703 /* Forms */,
 				1F4B38D8138E704D003FE58C /* BADemoAppDelegate.h */,
 				1F4B38D9138E704D003FE58C /* BADemoAppDelegate.m */,
 				1F4B38E2138E704D003FE58C /* MainWindow.xib */,
 				1F4B38DA138E704D003FE58C /* BADemoViewController.h */,
 				1F4B38DB138E704D003FE58C /* BADemoViewController.m */,
+				1F4B38DD138E704D003FE58C /* BADemo-Prefix.pch */,
+				1F75710913A239450015AA92 /* form-button.png */,
+				1F4B38DE138E704D003FE58C /* InfoPlist.strings */,
+				1F4B38E0138E704D003FE58C /* Info.plist */,
+				1F4B38E1138E704D003FE58C /* main.m */,
+			);
+			path = BADemo;
+			sourceTree = "<group>";
+		};
+		1F56247713B243EA004DF703 /* UI */ = {
+			isa = PBXGroup;
+			children = (
 				1F7F0FE1138EED8100E62046 /* BAPageControlViewController.h */,
 				1F7F0FE2138EED8100E62046 /* BAPageControlViewController.m */,
 				1F7F0FE3138EED8100E62046 /* BAPageControlViewController.xib */,
@@ -188,16 +213,21 @@
 				1F6C8F31139E730100DA3270 /* BAActivityViewController.h */,
 				1F6C8F32139E730100DA3270 /* BAActivityViewController.m */,
 				1F6C8F33139E730100DA3270 /* BAActivityViewController.xib */,
+				1F56247213B243DF004DF703 /* BAGradientViewController.h */,
+				1F56247313B243DF004DF703 /* BAGradientViewController.m */,
+				1F56247413B243DF004DF703 /* BAGradientViewController.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		1F56247813B24403004DF703 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
 				1F8E7F16139FA49600D99164 /* BAFormViewController.h */,
 				1F8E7F17139FA49600D99164 /* BAFormViewController.m */,
 				1F8E7F19139FA4BA00D99164 /* BAFormViewController.xib */,
-				1F4B38DD138E704D003FE58C /* BADemo-Prefix.pch */,
-				1F75710913A239450015AA92 /* form-button.png */,
-				1F4B38DE138E704D003FE58C /* InfoPlist.strings */,
-				1F4B38E0138E704D003FE58C /* Info.plist */,
-				1F4B38E1138E704D003FE58C /* main.m */,
 			);
-			path = BADemo;
+			name = Forms;
 			sourceTree = "<group>";
 		};
 		1F5959E7139F6744003B0C01 /* Forms */ = {
@@ -217,6 +247,8 @@
 				1F75710413A237900015AA92 /* BAFormButtonFieldCell.m */,
 				1F5959E9139F677C003B0C01 /* BAFormProvider.h */,
 				1F5959EA139F677C003B0C01 /* BAFormProvider.m */,
+				1F56246B13B243A2004DF703 /* BAFormInputSupport.h */,
+				1F56246C13B243A2004DF703 /* BAFormInputSupport.m */,
 			);
 			name = Forms;
 			sourceTree = "<group>";
@@ -248,6 +280,8 @@
 				1F6C8F38139E731900DA3270 /* BAActivityView.m */,
 				1F8E7F1F139FC2D500D99164 /* BAKeyboardTracker.h */,
 				1F8E7F20139FC2D500D99164 /* BAKeyboardTracker.m */,
+				1F56246D13B243A2004DF703 /* BAGradientView.h */,
+				1F56246E13B243A2004DF703 /* BAGradientView.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -372,7 +406,6 @@
 			};
 			buildConfigurationList = 1FC7B7E3138E592800900EA2 /* Build configuration list for PBXProject "BADemo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -404,6 +437,7 @@
 				1F8E7F1A139FA4BA00D99164 /* BAFormViewController.xib in Resources */,
 				1F75710713A237900015AA92 /* README in Resources */,
 				1F75710A13A239450015AA92 /* form-button.png in Resources */,
+				1F56247613B243DF004DF703 /* BAGradientViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +484,9 @@
 				1F8E7F18139FA49600D99164 /* BAFormViewController.m in Sources */,
 				1F8E7F21139FC2D500D99164 /* BAKeyboardTracker.m in Sources */,
 				1F75710613A237900015AA92 /* BAFormButtonFieldCell.m in Sources */,
+				1F56246F13B243A2004DF703 /* BAFormInputSupport.m in Sources */,
+				1F56247013B243A2004DF703 /* BAGradientView.m in Sources */,
+				1F56247513B243DF004DF703 /* BAGradientViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
