@@ -44,6 +44,9 @@
 		1F7F1006138EFF1300E62046 /* UITableView+BALoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F0FFF138EFF1200E62046 /* UITableView+BALoading.m */; };
 		1F7F1007138EFF1300E62046 /* BARefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F1001138EFF1300E62046 /* BARefreshHeaderView.m */; };
 		1F7F1009138F00D800E62046 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7F1008138F00D800E62046 /* QuartzCore.framework */; };
+		1F8B257213F04691005FA6E9 /* UIView+BACookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B257113F04691005FA6E9 /* UIView+BACookie.m */; };
+		1F8B257713F048CB005FA6E9 /* BAViewCookieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B257513F048CB005FA6E9 /* BAViewCookieViewController.m */; };
+		1F8B257813F048CB005FA6E9 /* BAViewCookieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8B257613F048CB005FA6E9 /* BAViewCookieViewController.xib */; };
 		1F8E7F11139F916200D99164 /* BAFormTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E7F10139F916200D99164 /* BAFormTextFieldCell.m */; };
 		1F8E7F15139F92E700D99164 /* BAFormLabelFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E7F14139F92E700D99164 /* BAFormLabelFieldCell.m */; };
 		1F8E7F18139FA49600D99164 /* BAFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E7F17139FA49600D99164 /* BAFormViewController.m */; };
@@ -63,6 +66,8 @@
 		1FC7B7F2138E592800900EA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7B7F1138E592800900EA2 /* CoreGraphics.framework */; };
 		1FE78BD61396988800B35BDE /* BADemo_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 1FE78BD41396988800B35BDE /* BADemo_AdHoc.mobileprovision */; };
 		1FE78BD71396988800B35BDE /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1FE78BD51396988800B35BDE /* build.sh */; };
+		1FECC3AE13F2DD4700FCDBEF /* BAEditableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */; };
+		1FECC3AF13F2DD4700FCDBEF /* BARemoteImageToggleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3AD13F2DD4700FCDBEF /* BARemoteImageToggleItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +138,11 @@
 		1F7F1000138EFF1200E62046 /* BARefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BARefreshHeaderView.h; sourceTree = "<group>"; };
 		1F7F1001138EFF1300E62046 /* BARefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BARefreshHeaderView.m; sourceTree = "<group>"; };
 		1F7F1008138F00D800E62046 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1F8B257013F04691005FA6E9 /* UIView+BACookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BACookie.h"; sourceTree = "<group>"; };
+		1F8B257113F04691005FA6E9 /* UIView+BACookie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BACookie.m"; sourceTree = "<group>"; };
+		1F8B257413F048CB005FA6E9 /* BAViewCookieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAViewCookieViewController.h; sourceTree = "<group>"; };
+		1F8B257513F048CB005FA6E9 /* BAViewCookieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAViewCookieViewController.m; sourceTree = "<group>"; };
+		1F8B257613F048CB005FA6E9 /* BAViewCookieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAViewCookieViewController.xib; sourceTree = "<group>"; };
 		1F8E7F0F139F916200D99164 /* BAFormTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAFormTextFieldCell.h; sourceTree = "<group>"; };
 		1F8E7F10139F916200D99164 /* BAFormTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAFormTextFieldCell.m; sourceTree = "<group>"; };
 		1F8E7F13139F92E700D99164 /* BAFormLabelFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAFormLabelFieldCell.h; sourceTree = "<group>"; };
@@ -165,6 +175,10 @@
 		1FD6286813AA51C000D269EB /* BACommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACommon.h; sourceTree = "<group>"; };
 		1FE78BD41396988800B35BDE /* BADemo_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = BADemo_AdHoc.mobileprovision; sourceTree = "<group>"; };
 		1FE78BD51396988800B35BDE /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		1FECC3AA13F2DD4700FCDBEF /* BAEditableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAEditableCell.h; sourceTree = "<group>"; };
+		1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAEditableCell.m; sourceTree = "<group>"; };
+		1FECC3AC13F2DD4700FCDBEF /* BARemoteImageToggleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BARemoteImageToggleItem.h; sourceTree = "<group>"; };
+		1FECC3AD13F2DD4700FCDBEF /* BARemoteImageToggleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BARemoteImageToggleItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +230,9 @@
 				1F56247213B243DF004DF703 /* BAGradientViewController.h */,
 				1F56247313B243DF004DF703 /* BAGradientViewController.m */,
 				1F56247413B243DF004DF703 /* BAGradientViewController.xib */,
+				1F8B257413F048CB005FA6E9 /* BAViewCookieViewController.h */,
+				1F8B257513F048CB005FA6E9 /* BAViewCookieViewController.m */,
+				1F8B257613F048CB005FA6E9 /* BAViewCookieViewController.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -257,6 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				1FD6286813AA51C000D269EB /* BACommon.h */,
+				1F8B257013F04691005FA6E9 /* UIView+BACookie.h */,
+				1F8B257113F04691005FA6E9 /* UIView+BACookie.m */,
 				1F7F0FFC138EFF1200E62046 /* UINavigationController+BATransitions.h */,
 				1F7F0FFD138EFF1200E62046 /* UINavigationController+BATransitions.m */,
 				1F7F0FFE138EFF1200E62046 /* UITableView+BALoading.h */,
@@ -274,6 +293,8 @@
 				1F7F0FF7138EFF1100E62046 /* BAToggleItem.h */,
 				1F7F0FF8138EFF1100E62046 /* BAToggleItemImage.h */,
 				1F7F0FF9138EFF1100E62046 /* BAToggleItemImage.m */,
+				1FECC3AC13F2DD4700FCDBEF /* BARemoteImageToggleItem.h */,
+				1FECC3AD13F2DD4700FCDBEF /* BARemoteImageToggleItem.m */,
 				1F7F0FFA138EFF1200E62046 /* BAToggleItemLabel.h */,
 				1F7F0FFB138EFF1200E62046 /* BAToggleItemLabel.m */,
 				1F6C8F37139E731900DA3270 /* BAActivityView.h */,
@@ -282,6 +303,8 @@
 				1F8E7F20139FC2D500D99164 /* BAKeyboardTracker.m */,
 				1F56246D13B243A2004DF703 /* BAGradientView.h */,
 				1F56246E13B243A2004DF703 /* BAGradientView.m */,
+				1FECC3AA13F2DD4700FCDBEF /* BAEditableCell.h */,
+				1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -406,6 +429,7 @@
 			};
 			buildConfigurationList = 1FC7B7E3138E592800900EA2 /* Build configuration list for PBXProject "BADemo" */;
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -438,6 +462,7 @@
 				1F75710713A237900015AA92 /* README in Resources */,
 				1F75710A13A239450015AA92 /* form-button.png in Resources */,
 				1F56247613B243DF004DF703 /* BAGradientViewController.xib in Resources */,
+				1F8B257813F048CB005FA6E9 /* BAViewCookieViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +512,10 @@
 				1F56246F13B243A2004DF703 /* BAFormInputSupport.m in Sources */,
 				1F56247013B243A2004DF703 /* BAGradientView.m in Sources */,
 				1F56247513B243DF004DF703 /* BAGradientViewController.m in Sources */,
+				1F8B257213F04691005FA6E9 /* UIView+BACookie.m in Sources */,
+				1F8B257713F048CB005FA6E9 /* BAViewCookieViewController.m in Sources */,
+				1FECC3AE13F2DD4700FCDBEF /* BAEditableCell.m in Sources */,
+				1FECC3AF13F2DD4700FCDBEF /* BARemoteImageToggleItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

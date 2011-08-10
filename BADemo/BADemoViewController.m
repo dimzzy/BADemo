@@ -32,6 +32,7 @@
 #import "BAActivityViewController.h"
 #import "BAGradientViewController.h"
 #import "BAFormViewController.h"
+#import "BAViewCookieViewController.h"
 
 @implementation BADemoViewController
 
@@ -40,7 +41,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 5;
+	return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -63,6 +64,9 @@
 			break;
 		case 4:
 			cell.textLabel.text = @"Form";
+			break;
+		case 5:
+			cell.textLabel.text = @"View's Cookie";
 			break;
 	}
 	return cell;
@@ -102,6 +106,13 @@
 		}
 		case 4: {
 			BAFormViewController *controller = [[[BAFormViewController alloc] initWithNibName:@"BAFormViewController"
+																					   bundle:nil] autorelease];
+			controller.navigationItem.title = title;
+			[self.navigationController pushViewController:controller animated:YES];
+			break;
+		}
+		case 5: {
+			BAViewCookieViewController *controller = [[[BAViewCookieViewController alloc] initWithNibName:@"BAViewCookieViewController"
 																					   bundle:nil] autorelease];
 			controller.navigationItem.title = title;
 			[self.navigationController pushViewController:controller animated:YES];
