@@ -33,6 +33,7 @@
 #import "BAGradientViewController.h"
 #import "BAFormViewController.h"
 #import "BAViewCookieViewController.h"
+#import "BASimpleEditableTableViewController.h"
 
 @implementation BADemoViewController
 
@@ -41,7 +42,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 6;
+	return 7;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -67,6 +68,9 @@
 			break;
 		case 5:
 			cell.textLabel.text = @"View's Cookie";
+			break;
+		case 6:
+			cell.textLabel.text = @"Editable Table";
 			break;
 	}
 	return cell;
@@ -113,7 +117,14 @@
 		}
 		case 5: {
 			BAViewCookieViewController *controller = [[[BAViewCookieViewController alloc] initWithNibName:@"BAViewCookieViewController"
-																					   bundle:nil] autorelease];
+																								   bundle:nil] autorelease];
+			controller.navigationItem.title = title;
+			[self.navigationController pushViewController:controller animated:YES];
+			break;
+		}
+		case 6: {
+			BASimpleEditableTableViewController *controller = [[[BASimpleEditableTableViewController alloc] initWithNibName:@"BASimpleEditableTableViewController"
+																													 bundle:nil] autorelease];
 			controller.navigationItem.title = title;
 			[self.navigationController pushViewController:controller animated:YES];
 			break;

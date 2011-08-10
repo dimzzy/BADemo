@@ -68,6 +68,8 @@
 		1FE78BD71396988800B35BDE /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1FE78BD51396988800B35BDE /* build.sh */; };
 		1FECC3AE13F2DD4700FCDBEF /* BAEditableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */; };
 		1FECC3AF13F2DD4700FCDBEF /* BARemoteImageToggleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3AD13F2DD4700FCDBEF /* BARemoteImageToggleItem.m */; };
+		1FECC3B413F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3B213F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m */; };
+		1FECC3B513F2DD9D00FCDBEF /* BASimpleEditableTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FECC3B313F2DD9D00FCDBEF /* BASimpleEditableTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -179,6 +181,9 @@
 		1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAEditableCell.m; sourceTree = "<group>"; };
 		1FECC3AC13F2DD4700FCDBEF /* BARemoteImageToggleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BARemoteImageToggleItem.h; sourceTree = "<group>"; };
 		1FECC3AD13F2DD4700FCDBEF /* BARemoteImageToggleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BARemoteImageToggleItem.m; sourceTree = "<group>"; };
+		1FECC3B113F2DD9D00FCDBEF /* BASimpleEditableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASimpleEditableTableViewController.h; sourceTree = "<group>"; };
+		1FECC3B213F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASimpleEditableTableViewController.m; sourceTree = "<group>"; };
+		1FECC3B313F2DD9D00FCDBEF /* BASimpleEditableTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BASimpleEditableTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +238,9 @@
 				1F8B257413F048CB005FA6E9 /* BAViewCookieViewController.h */,
 				1F8B257513F048CB005FA6E9 /* BAViewCookieViewController.m */,
 				1F8B257613F048CB005FA6E9 /* BAViewCookieViewController.xib */,
+				1FECC3B113F2DD9D00FCDBEF /* BASimpleEditableTableViewController.h */,
+				1FECC3B213F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m */,
+				1FECC3B313F2DD9D00FCDBEF /* BASimpleEditableTableViewController.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -463,6 +471,7 @@
 				1F75710A13A239450015AA92 /* form-button.png in Resources */,
 				1F56247613B243DF004DF703 /* BAGradientViewController.xib in Resources */,
 				1F8B257813F048CB005FA6E9 /* BAViewCookieViewController.xib in Resources */,
+				1FECC3B513F2DD9D00FCDBEF /* BASimpleEditableTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +525,7 @@
 				1F8B257713F048CB005FA6E9 /* BAViewCookieViewController.m in Sources */,
 				1FECC3AE13F2DD4700FCDBEF /* BAEditableCell.m in Sources */,
 				1FECC3AF13F2DD4700FCDBEF /* BARemoteImageToggleItem.m in Sources */,
+				1FECC3B413F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
