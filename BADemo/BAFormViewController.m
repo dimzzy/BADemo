@@ -71,7 +71,7 @@
 		[_provider.sectionDescriptors addObject:sd1];
 		BAFormSectionDescriptor *sd2 = [[[BAFormSectionDescriptor alloc] init] autorelease];
 		sd2.header = @"Data";
-		sd2.footer = @"Made with BaseAppKit";
+		sd2.footer = @"Made with BAFormKit";
 		[_provider.sectionDescriptors addObject:sd2];
 		{
 			BAFormFieldDescriptor *fd = [[[BAFormFieldDescriptor alloc] init] autorelease];
