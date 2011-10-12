@@ -34,6 +34,7 @@
 #import "BAFormViewController.h"
 #import "BAViewCookieViewController.h"
 #import "BASimpleEditableTableViewController.h"
+#import "BALabelViewController.h"
 
 @implementation BADemoViewController
 
@@ -42,7 +43,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 7;
+	return 8;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -71,6 +72,9 @@
 			break;
 		case 6:
 			cell.textLabel.text = @"Editable Table";
+			break;
+		case 7:
+			cell.textLabel.text = @"Label";
 			break;
 	}
 	return cell;
@@ -125,6 +129,13 @@
 		case 6: {
 			BASimpleEditableTableViewController *controller = [[[BASimpleEditableTableViewController alloc] initWithNibName:@"BASimpleEditableTableViewController"
 																													 bundle:nil] autorelease];
+			controller.navigationItem.title = title;
+			[self.navigationController pushViewController:controller animated:YES];
+			break;
+		}
+		case 7: {
+			BALabelViewController *controller = [[[BALabelViewController alloc] initWithNibName:@"BALabelViewController"
+																						 bundle:nil] autorelease];
 			controller.navigationItem.title = title;
 			[self.navigationController pushViewController:controller animated:YES];
 			break;
