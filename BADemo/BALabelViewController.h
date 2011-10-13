@@ -37,5 +37,6 @@
 @property(nonatomic, retain) IBOutlet BALabel *l4;
 @property(nonatomic, retain) IBOutlet BALabel *l5;
 @property(nonatomic, retain) IBOutlet BALabel *l6;
+@property(nonatomic, retain) IBOutlet BALabel *l7;
 
 @end

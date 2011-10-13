@@ -30,10 +30,10 @@
 
 @implementation BALabelViewController
 
-@synthesize l1, l2, l3, l4, l5, l6;
+@synthesize l1, l2, l3, l4, l5, l6, l7;
 
 - (void)dealloc {
-	self.l1 = self.l2 = self.l3 = self.l4 = self.l5 = self.l6 =nil;
+	self.l1 = self.l2 = self.l3 = self.l4 = self.l5 = self.l6 = self.l7 = nil;
 	[super dealloc];
 }
 
@@ -45,6 +45,7 @@
 	self.l5.verticalAlignment = BAVerticalAlignmentBottom;
 	self.l6.verticalAlignment = BAVerticalAlignmentBottom;
 	self.l6.textInsets = UIEdgeInsetsMake(5, 10, 15, 20);
+	[self.l7 sizeToFitWidth];
 }
 
 @end

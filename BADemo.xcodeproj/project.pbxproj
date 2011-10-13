@@ -56,8 +56,6 @@
 		1FC7B7EE138E592800900EA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7B7ED138E592800900EA2 /* UIKit.framework */; };
 		1FC7B7F0138E592800900EA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7B7EF138E592800900EA2 /* Foundation.framework */; };
 		1FC7B7F2138E592800900EA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7B7F1138E592800900EA2 /* CoreGraphics.framework */; };
-		1FE78BD61396988800B35BDE /* BADemo_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 1FE78BD41396988800B35BDE /* BADemo_AdHoc.mobileprovision */; };
-		1FE78BD71396988800B35BDE /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1FE78BD51396988800B35BDE /* build.sh */; };
 		1FECC3AE13F2DD4700FCDBEF /* BAEditableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */; };
 		1FECC3AF13F2DD4700FCDBEF /* BARemoteImageToggleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3AD13F2DD4700FCDBEF /* BARemoteImageToggleItem.m */; };
 		1FECC3B413F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3B213F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m */; };
@@ -160,8 +158,6 @@
 		1FC7B7EF138E592800900EA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FC7B7F1138E592800900EA2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1FD6286813AA51C000D269EB /* BACommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACommon.h; sourceTree = "<group>"; };
-		1FE78BD41396988800B35BDE /* BADemo_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = BADemo_AdHoc.mobileprovision; sourceTree = "<group>"; };
-		1FE78BD51396988800B35BDE /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		1FECC3AA13F2DD4700FCDBEF /* BAEditableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAEditableCell.h; sourceTree = "<group>"; };
 		1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAEditableCell.m; sourceTree = "<group>"; };
 		1FECC3AC13F2DD4700FCDBEF /* BARemoteImageToggleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BARemoteImageToggleItem.h; sourceTree = "<group>"; };
@@ -353,7 +349,6 @@
 				1F4B38D7138E704D003FE58C /* BADemo */,
 				1FC7B7EC138E592800900EA2 /* Frameworks */,
 				1FC7B7EA138E592800900EA2 /* Products */,
-				1FE78BD31396988800B35BDE /* autobuild */,
 			);
 			sourceTree = "<group>";
 		};
@@ -374,15 +369,6 @@
 				1FC7B7F1138E592800900EA2 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1FE78BD31396988800B35BDE /* autobuild */ = {
-			isa = PBXGroup;
-			children = (
-				1FE78BD51396988800B35BDE /* build.sh */,
-				1FE78BD41396988800B35BDE /* BADemo_AdHoc.mobileprovision */,
-			);
-			path = autobuild;
 			sourceTree = "<group>";
 		};
 		1FFF233014180D320036CE48 /* BAFormKit */ = {
@@ -466,8 +452,6 @@
 				1F98003F138E745500B91C2C /* README.md in Resources */,
 				1F7F0FE5138EED8100E62046 /* BAPageControlViewController.xib in Resources */,
 				1F7F0FF4138EF50500E62046 /* BAProgressViewController.xib in Resources */,
-				1FE78BD61396988800B35BDE /* BADemo_AdHoc.mobileprovision in Resources */,
-				1FE78BD71396988800B35BDE /* build.sh in Resources */,
 				1F6C8F35139E730100DA3270 /* BAActivityViewController.xib in Resources */,
 				1F8E7F1A139FA4BA00D99164 /* BAFormViewController.xib in Resources */,
 				1F75710A13A239450015AA92 /* form-button.png in Resources */,
