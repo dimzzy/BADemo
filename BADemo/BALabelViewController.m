@@ -45,7 +45,7 @@
 	self.l5.verticalAlignment = BAVerticalAlignmentBottom;
 	self.l6.verticalAlignment = BAVerticalAlignmentBottom;
 	self.l6.textInsets = UIEdgeInsetsMake(5, 10, 15, 20);
-	[self.l7 sizeToFitWidth];
+	[self.l7 sizeToFitInWidth];
 }
 
 @end
