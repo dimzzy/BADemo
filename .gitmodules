@@ -1,9 +1,6 @@
 [submodule "BaseAppKit"]
 	path = BaseAppKit
 	url = https://github.com/dimzzy/BaseAppKit.git
-[submodule "JSONKit"]
-	path = JSONKit
-	url = https://github.com/johnezang/JSONKit.git
 [submodule "BAFormKit"]
 	path = BAFormKit
 	url = git@github.com:dimzzy/BAFormKit.git
