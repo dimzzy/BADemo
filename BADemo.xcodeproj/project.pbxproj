@@ -35,15 +35,14 @@
 		1F7F1006138EFF1300E62046 /* UITableView+BALoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F0FFF138EFF1200E62046 /* UITableView+BALoading.m */; };
 		1F7F1007138EFF1300E62046 /* BARefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F1001138EFF1300E62046 /* BARefreshHeaderView.m */; };
 		1F7F1009138F00D800E62046 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7F1008138F00D800E62046 /* QuartzCore.framework */; };
+		1F82424B14530BF0005880A6 /* BAPager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F82424714530BF0005880A6 /* BAPager.m */; };
+		1F82424C14530BF0005880A6 /* BASwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F82424914530BF0005880A6 /* BASwitchCell.m */; };
 		1F8B257213F04691005FA6E9 /* UIView+BACookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B257113F04691005FA6E9 /* UIView+BACookie.m */; };
 		1F8B257713F048CB005FA6E9 /* BAViewCookieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B257513F048CB005FA6E9 /* BAViewCookieViewController.m */; };
 		1F8B257813F048CB005FA6E9 /* BAViewCookieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8B257613F048CB005FA6E9 /* BAViewCookieViewController.xib */; };
 		1F8E7F18139FA49600D99164 /* BAFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E7F17139FA49600D99164 /* BAFormViewController.m */; };
 		1F8E7F1A139FA4BA00D99164 /* BAFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8E7F19139FA4BA00D99164 /* BAFormViewController.xib */; };
 		1F8E7F21139FC2D500D99164 /* BAKeyboardTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E7F20139FC2D500D99164 /* BAKeyboardTracker.m */; };
-		1F98003D138E745500B91C2C /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F980023138E745500B91C2C /* CHANGELOG.md */; };
-		1F98003E138E745500B91C2C /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F980025138E745500B91C2C /* JSONKit.m */; };
-		1F98003F138E745500B91C2C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F980026138E745500B91C2C /* README.md */; };
 		1F980061138E892700B91C2C /* BAPersistentCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F980056138E892700B91C2C /* BAPersistentCache.m */; };
 		1F980062138E892700B91C2C /* BADataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F980058138E892700B91C2C /* BADataLoader.m */; };
 		1F980063138E892700B91C2C /* BAJSONLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F98005A138E892700B91C2C /* BAJSONLoader.m */; };
@@ -70,7 +69,6 @@
 		1FFF234714180D320036CE48 /* BAFormProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF233C14180D320036CE48 /* BAFormProvider.m */; };
 		1FFF234814180D320036CE48 /* BAFormSectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF233E14180D320036CE48 /* BAFormSectionDescriptor.m */; };
 		1FFF234914180D320036CE48 /* BAFormTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF234014180D320036CE48 /* BAFormTextFieldCell.m */; };
-		1FFF234A14180D320036CE48 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 1FFF234114180D320036CE48 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +122,10 @@
 		1F7F1000138EFF1200E62046 /* BARefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BARefreshHeaderView.h; sourceTree = "<group>"; };
 		1F7F1001138EFF1300E62046 /* BARefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BARefreshHeaderView.m; sourceTree = "<group>"; };
 		1F7F1008138F00D800E62046 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1F82424614530BF0005880A6 /* BAPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPager.h; sourceTree = "<group>"; };
+		1F82424714530BF0005880A6 /* BAPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPager.m; sourceTree = "<group>"; };
+		1F82424814530BF0005880A6 /* BASwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASwitchCell.h; sourceTree = "<group>"; };
+		1F82424914530BF0005880A6 /* BASwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASwitchCell.m; sourceTree = "<group>"; };
 		1F8B257013F04691005FA6E9 /* UIView+BACookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BACookie.h"; sourceTree = "<group>"; };
 		1F8B257113F04691005FA6E9 /* UIView+BACookie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BACookie.m"; sourceTree = "<group>"; };
 		1F8B257413F048CB005FA6E9 /* BAViewCookieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAViewCookieViewController.h; sourceTree = "<group>"; };
@@ -134,10 +136,6 @@
 		1F8E7F19139FA4BA00D99164 /* BAFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAFormViewController.xib; sourceTree = "<group>"; };
 		1F8E7F1F139FC2D500D99164 /* BAKeyboardTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKeyboardTracker.h; sourceTree = "<group>"; };
 		1F8E7F20139FC2D500D99164 /* BAKeyboardTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAKeyboardTracker.m; sourceTree = "<group>"; };
-		1F980023138E745500B91C2C /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		1F980024138E745500B91C2C /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		1F980025138E745500B91C2C /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		1F980026138E745500B91C2C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1F980055138E892700B91C2C /* BAPersistentCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPersistentCache.h; sourceTree = "<group>"; };
 		1F980056138E892700B91C2C /* BAPersistentCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPersistentCache.m; sourceTree = "<group>"; };
 		1F980057138E892700B91C2C /* BADataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADataLoader.h; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 		1FFF233E14180D320036CE48 /* BAFormSectionDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAFormSectionDescriptor.m; sourceTree = "<group>"; };
 		1FFF233F14180D320036CE48 /* BAFormTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAFormTextFieldCell.h; sourceTree = "<group>"; };
 		1FFF234014180D320036CE48 /* BAFormTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAFormTextFieldCell.m; sourceTree = "<group>"; };
-		1FFF234114180D320036CE48 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +266,10 @@
 		1F6C8F3A139E732800DA3270 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1F82424614530BF0005880A6 /* BAPager.h */,
+				1F82424714530BF0005880A6 /* BAPager.m */,
+				1F82424814530BF0005880A6 /* BASwitchCell.h */,
+				1F82424914530BF0005880A6 /* BASwitchCell.m */,
 				1FD6286813AA51C000D269EB /* BACommon.h */,
 				1F8B257013F04691005FA6E9 /* UIView+BACookie.h */,
 				1F8B257113F04691005FA6E9 /* UIView+BACookie.m */,
@@ -339,23 +340,11 @@
 			path = BaseAppKit;
 			sourceTree = "<group>";
 		};
-		1F98FFFD138E745500B91C2C /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				1F980023138E745500B91C2C /* CHANGELOG.md */,
-				1F980024138E745500B91C2C /* JSONKit.h */,
-				1F980025138E745500B91C2C /* JSONKit.m */,
-				1F980026138E745500B91C2C /* README.md */,
-			);
-			path = JSONKit;
-			sourceTree = "<group>";
-		};
 		1FC7B7DE138E592800900EA2 = {
 			isa = PBXGroup;
 			children = (
 				1F980054138E892700B91C2C /* BaseAppKit */,
 				1FFF233014180D320036CE48 /* BAFormKit */,
-				1F98FFFD138E745500B91C2C /* JSONKit */,
 				1F4B38D7138E704D003FE58C /* BADemo */,
 				1FC7B7EC138E592800900EA2 /* Frameworks */,
 				1FC7B7EA138E592800900EA2 /* Products */,
@@ -400,7 +389,6 @@
 				1FFF233E14180D320036CE48 /* BAFormSectionDescriptor.m */,
 				1FFF233F14180D320036CE48 /* BAFormTextFieldCell.h */,
 				1FFF234014180D320036CE48 /* BAFormTextFieldCell.m */,
-				1FFF234114180D320036CE48 /* README */,
 			);
 			path = BAFormKit;
 			sourceTree = "<group>";
@@ -458,8 +446,6 @@
 			files = (
 				1F4B38E6138E704D003FE58C /* InfoPlist.strings in Resources */,
 				1F4B38E9138E704D003FE58C /* MainWindow.xib in Resources */,
-				1F98003D138E745500B91C2C /* CHANGELOG.md in Resources */,
-				1F98003F138E745500B91C2C /* README.md in Resources */,
 				1F7F0FE5138EED8100E62046 /* BAPageControlViewController.xib in Resources */,
 				1F7F0FF4138EF50500E62046 /* BAProgressViewController.xib in Resources */,
 				1F6C8F35139E730100DA3270 /* BAActivityViewController.xib in Resources */,
@@ -468,7 +454,6 @@
 				1F56247613B243DF004DF703 /* BAGradientViewController.xib in Resources */,
 				1F8B257813F048CB005FA6E9 /* BAViewCookieViewController.xib in Resources */,
 				1FECC3B513F2DD9D00FCDBEF /* BASimpleEditableTableViewController.xib in Resources */,
-				1FFF234A14180D320036CE48 /* README in Resources */,
 				1FB50C931446371200AA5171 /* BALabelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,7 +468,6 @@
 				1F4B38E3138E704D003FE58C /* BADemoAppDelegate.m in Sources */,
 				1F4B38E4138E704D003FE58C /* BADemoViewController.m in Sources */,
 				1F4B38E8138E704D003FE58C /* main.m in Sources */,
-				1F98003E138E745500B91C2C /* JSONKit.m in Sources */,
 				1F980061138E892700B91C2C /* BAPersistentCache.m in Sources */,
 				1F980062138E892700B91C2C /* BADataLoader.m in Sources */,
 				1F980063138E892700B91C2C /* BAJSONLoader.m in Sources */,
@@ -526,6 +510,8 @@
 				1FB50C921446371200AA5171 /* BALabelViewController.m in Sources */,
 				1FED08801451B3CD00079B38 /* DataBagX.m in Sources */,
 				1FED08841451B46900079B38 /* DataBagY.m in Sources */,
+				1F82424B14530BF0005880A6 /* BAPager.m in Sources */,
+				1F82424C14530BF0005880A6 /* BASwitchCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
