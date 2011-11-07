@@ -35,6 +35,7 @@
 #import "BAViewCookieViewController.h"
 #import "BASimpleEditableTableViewController.h"
 #import "BALabelViewController.h"
+#import "BASequenceControlViewController.h"
 
 @implementation BADemoViewController
 
@@ -43,7 +44,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 8;
+	return 9;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -75,6 +76,9 @@
 			break;
 		case 7:
 			cell.textLabel.text = @"Label";
+			break;
+		case 8:
+			cell.textLabel.text = @"Sequence Control";
 			break;
 	}
 	return cell;
@@ -136,6 +140,13 @@
 		case 7: {
 			BALabelViewController *controller = [[[BALabelViewController alloc] initWithNibName:@"BALabelViewController"
 																						 bundle:nil] autorelease];
+			controller.navigationItem.title = title;
+			[self.navigationController pushViewController:controller animated:YES];
+			break;
+		}
+		case 8: {
+			BASequenceControlViewController *controller = [[[BASequenceControlViewController alloc] initWithNibName:@"BASequenceControlViewController"
+																											 bundle:nil] autorelease];
 			controller.navigationItem.title = title;
 			[self.navigationController pushViewController:controller animated:YES];
 			break;

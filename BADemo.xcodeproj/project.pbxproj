@@ -59,8 +59,13 @@
 		1FECC3AF13F2DD4700FCDBEF /* BARemoteImageToggleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3AD13F2DD4700FCDBEF /* BARemoteImageToggleItem.m */; };
 		1FECC3B413F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3B213F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m */; };
 		1FECC3B513F2DD9D00FCDBEF /* BASimpleEditableTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FECC3B313F2DD9D00FCDBEF /* BASimpleEditableTableViewController.xib */; };
-		1FED08801451B3CD00079B38 /* DataBagX.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FED087F1451B3CD00079B38 /* DataBagX.m */; };
-		1FED08841451B46900079B38 /* DataBagY.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FED08831451B46900079B38 /* DataBagY.m */; };
+		1FF5AB501467D20300BA56EF /* ba-sequence-item-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FF5AB4C1467D20300BA56EF /* ba-sequence-item-active.png */; };
+		1FF5AB511467D20300BA56EF /* ba-sequence-item-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FF5AB4D1467D20300BA56EF /* ba-sequence-item-active@2x.png */; };
+		1FF5AB521467D20300BA56EF /* ba-sequence-item-passive.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FF5AB4E1467D20300BA56EF /* ba-sequence-item-passive.png */; };
+		1FF5AB531467D20300BA56EF /* ba-sequence-item-passive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FF5AB4F1467D20300BA56EF /* ba-sequence-item-passive@2x.png */; };
+		1FF5AB561467D24F00BA56EF /* BASequenceControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5AB551467D24F00BA56EF /* BASequenceControl.m */; };
+		1FF5AB5A1467EED000BA56EF /* BASequenceControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5AB581467EED000BA56EF /* BASequenceControlViewController.m */; };
+		1FF5AB5B1467EED000BA56EF /* BASequenceControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FF5AB591467EED000BA56EF /* BASequenceControlViewController.xib */; };
 		1FFF234214180D320036CE48 /* BAFormButtonFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF233214180D320036CE48 /* BAFormButtonFieldCell.m */; };
 		1FFF234314180D320036CE48 /* BAFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF233414180D320036CE48 /* BAFormFieldCell.m */; };
 		1FFF234414180D320036CE48 /* BAFormFieldDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF233614180D320036CE48 /* BAFormFieldDescriptor.m */; };
@@ -165,10 +170,15 @@
 		1FECC3B113F2DD9D00FCDBEF /* BASimpleEditableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASimpleEditableTableViewController.h; sourceTree = "<group>"; };
 		1FECC3B213F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASimpleEditableTableViewController.m; sourceTree = "<group>"; };
 		1FECC3B313F2DD9D00FCDBEF /* BASimpleEditableTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BASimpleEditableTableViewController.xib; sourceTree = "<group>"; };
-		1FED087E1451B3CD00079B38 /* DataBagX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBagX.h; sourceTree = "<group>"; };
-		1FED087F1451B3CD00079B38 /* DataBagX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBagX.m; sourceTree = "<group>"; };
-		1FED08821451B46900079B38 /* DataBagY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBagY.h; sourceTree = "<group>"; };
-		1FED08831451B46900079B38 /* DataBagY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBagY.m; sourceTree = "<group>"; };
+		1FF5AB4C1467D20300BA56EF /* ba-sequence-item-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ba-sequence-item-active.png"; sourceTree = "<group>"; };
+		1FF5AB4D1467D20300BA56EF /* ba-sequence-item-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ba-sequence-item-active@2x.png"; sourceTree = "<group>"; };
+		1FF5AB4E1467D20300BA56EF /* ba-sequence-item-passive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ba-sequence-item-passive.png"; sourceTree = "<group>"; };
+		1FF5AB4F1467D20300BA56EF /* ba-sequence-item-passive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ba-sequence-item-passive@2x.png"; sourceTree = "<group>"; };
+		1FF5AB541467D24F00BA56EF /* BASequenceControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASequenceControl.h; sourceTree = "<group>"; };
+		1FF5AB551467D24F00BA56EF /* BASequenceControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASequenceControl.m; sourceTree = "<group>"; };
+		1FF5AB571467EED000BA56EF /* BASequenceControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASequenceControlViewController.h; sourceTree = "<group>"; };
+		1FF5AB581467EED000BA56EF /* BASequenceControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASequenceControlViewController.m; sourceTree = "<group>"; };
+		1FF5AB591467EED000BA56EF /* BASequenceControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BASequenceControlViewController.xib; sourceTree = "<group>"; };
 		1FFF233114180D320036CE48 /* BAFormButtonFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAFormButtonFieldCell.h; sourceTree = "<group>"; };
 		1FFF233214180D320036CE48 /* BAFormButtonFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAFormButtonFieldCell.m; sourceTree = "<group>"; };
 		1FFF233314180D320036CE48 /* BAFormFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAFormFieldCell.h; sourceTree = "<group>"; };
@@ -217,10 +227,6 @@
 				1F4B38DE138E704D003FE58C /* InfoPlist.strings */,
 				1F4B38E0138E704D003FE58C /* Info.plist */,
 				1F4B38E1138E704D003FE58C /* main.m */,
-				1FED087E1451B3CD00079B38 /* DataBagX.h */,
-				1FED087F1451B3CD00079B38 /* DataBagX.m */,
-				1FED08821451B46900079B38 /* DataBagY.h */,
-				1FED08831451B46900079B38 /* DataBagY.m */,
 			);
 			path = BADemo;
 			sourceTree = "<group>";
@@ -249,6 +255,9 @@
 				1FB50C8F1446371200AA5171 /* BALabelViewController.h */,
 				1FB50C901446371200AA5171 /* BALabelViewController.m */,
 				1FB50C911446371200AA5171 /* BALabelViewController.xib */,
+				1FF5AB571467EED000BA56EF /* BASequenceControlViewController.h */,
+				1FF5AB581467EED000BA56EF /* BASequenceControlViewController.m */,
+				1FF5AB591467EED000BA56EF /* BASequenceControlViewController.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -304,6 +313,8 @@
 				1FB50C8C1446369700AA5171 /* BALabel.m */,
 				1FECC3AA13F2DD4700FCDBEF /* BAEditableCell.h */,
 				1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */,
+				1FF5AB541467D24F00BA56EF /* BASequenceControl.h */,
+				1FF5AB551467D24F00BA56EF /* BASequenceControl.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -336,6 +347,7 @@
 			children = (
 				1F6C8F3B139E733200DA3270 /* Core */,
 				1F6C8F3A139E732800DA3270 /* UI */,
+				1FF5AB4B1467D20300BA56EF /* Images */,
 			);
 			path = BaseAppKit;
 			sourceTree = "<group>";
@@ -368,6 +380,17 @@
 				1FC7B7F1138E592800900EA2 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FF5AB4B1467D20300BA56EF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5AB4C1467D20300BA56EF /* ba-sequence-item-active.png */,
+				1FF5AB4D1467D20300BA56EF /* ba-sequence-item-active@2x.png */,
+				1FF5AB4E1467D20300BA56EF /* ba-sequence-item-passive.png */,
+				1FF5AB4F1467D20300BA56EF /* ba-sequence-item-passive@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		1FFF233014180D320036CE48 /* BAFormKit */ = {
@@ -455,6 +478,11 @@
 				1F8B257813F048CB005FA6E9 /* BAViewCookieViewController.xib in Resources */,
 				1FECC3B513F2DD9D00FCDBEF /* BASimpleEditableTableViewController.xib in Resources */,
 				1FB50C931446371200AA5171 /* BALabelViewController.xib in Resources */,
+				1FF5AB501467D20300BA56EF /* ba-sequence-item-active.png in Resources */,
+				1FF5AB511467D20300BA56EF /* ba-sequence-item-active@2x.png in Resources */,
+				1FF5AB521467D20300BA56EF /* ba-sequence-item-passive.png in Resources */,
+				1FF5AB531467D20300BA56EF /* ba-sequence-item-passive@2x.png in Resources */,
+				1FF5AB5B1467EED000BA56EF /* BASequenceControlViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,10 +536,10 @@
 				1FFF234914180D320036CE48 /* BAFormTextFieldCell.m in Sources */,
 				1FB50C8D1446369700AA5171 /* BALabel.m in Sources */,
 				1FB50C921446371200AA5171 /* BALabelViewController.m in Sources */,
-				1FED08801451B3CD00079B38 /* DataBagX.m in Sources */,
-				1FED08841451B46900079B38 /* DataBagY.m in Sources */,
 				1F82424B14530BF0005880A6 /* BAPager.m in Sources */,
 				1F82424C14530BF0005880A6 /* BASwitchCell.m in Sources */,
+				1FF5AB561467D24F00BA56EF /* BASequenceControl.m in Sources */,
+				1FF5AB5A1467EED000BA56EF /* BASequenceControlViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
