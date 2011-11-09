@@ -30,10 +30,10 @@
 
 @implementation BALabelViewController
 
-@synthesize l1, l2, l3, l4, l5, l6, l7;
+@synthesize l1, l2, l3, l4, l5, l6, l7, rb, rsb;
 
 - (void)dealloc {
-	self.l1 = self.l2 = self.l3 = self.l4 = self.l5 = self.l6 = self.l7 = nil;
+	self.l1 = self.l2 = self.l3 = self.l4 = self.l5 = self.l6 = self.l7 = self.rb = self.rsb = nil;
 	[super dealloc];
 }
 
@@ -46,6 +46,12 @@
 	self.l6.verticalAlignment = BAVerticalAlignmentBottom;
 	self.l6.textInsets = UIEdgeInsetsMake(5, 10, 15, 20);
 	[self.l7 sizeToFitInWidth];
+	self.rb.bezel = kBALabelBezelRound;
+	self.rb.bezelLineWidth = 2;
+	self.rb.bezelColor = [UIColor blackColor];
+	self.rsb.bezel = kBALabelBezelRoundSolid;
+	self.rsb.bezelColor = [UIColor blackColor];
+	self.rsb.textColor = [UIColor whiteColor];
 }
 
 @end
