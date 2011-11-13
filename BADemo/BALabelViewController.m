@@ -46,10 +46,10 @@
 	self.l6.verticalAlignment = BAVerticalAlignmentBottom;
 	self.l6.textInsets = UIEdgeInsetsMake(5, 10, 15, 20);
 	[self.l7 sizeToFitInWidth];
-	self.rb.bezel = kBALabelBezelRound;
+	self.rb.bezel = BALabelBezelRound;
 	self.rb.bezelLineWidth = 2;
 	self.rb.bezelColor = [UIColor blackColor];
-	self.rsb.bezel = kBALabelBezelRoundSolid;
+	self.rsb.bezel = BALabelBezelRoundSolid;
 	self.rsb.bezelColor = [UIColor blackColor];
 	self.rsb.textColor = [UIColor whiteColor];
 }

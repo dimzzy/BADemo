@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F193076147001B10090774A /* BASeparatedTableProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F193075147001B10090774A /* BASeparatedTableProvider.m */; };
 		1F4B38E3138E704D003FE58C /* BADemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B38D9138E704D003FE58C /* BADemoAppDelegate.m */; };
 		1F4B38E4138E704D003FE58C /* BADemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B38DB138E704D003FE58C /* BADemoViewController.m */; };
 		1F4B38E6138E704D003FE58C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F4B38DE138E704D003FE58C /* InfoPlist.strings */; };
@@ -77,6 +78,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F193074147001B10090774A /* BASeparatedTableProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASeparatedTableProvider.h; sourceTree = "<group>"; };
+		1F193075147001B10090774A /* BASeparatedTableProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASeparatedTableProvider.m; sourceTree = "<group>"; };
 		1F4B38D8138E704D003FE58C /* BADemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADemoAppDelegate.h; sourceTree = "<group>"; };
 		1F4B38D9138E704D003FE58C /* BADemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BADemoAppDelegate.m; sourceTree = "<group>"; };
 		1F4B38DA138E704D003FE58C /* BADemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADemoViewController.h; sourceTree = "<group>"; };
@@ -315,6 +318,8 @@
 				1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */,
 				1FF5AB541467D24F00BA56EF /* BASequenceControl.h */,
 				1FF5AB551467D24F00BA56EF /* BASequenceControl.m */,
+				1F193074147001B10090774A /* BASeparatedTableProvider.h */,
+				1F193075147001B10090774A /* BASeparatedTableProvider.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -540,6 +545,7 @@
 				1F82424C14530BF0005880A6 /* BASwitchCell.m in Sources */,
 				1FF5AB561467D24F00BA56EF /* BASequenceControl.m in Sources */,
 				1FF5AB5A1467EED000BA56EF /* BASequenceControlViewController.m in Sources */,
+				1F193076147001B10090774A /* BASeparatedTableProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
