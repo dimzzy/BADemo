@@ -53,6 +53,7 @@
 		1FB50C8D1446369700AA5171 /* BALabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB50C8C1446369700AA5171 /* BALabel.m */; };
 		1FB50C921446371200AA5171 /* BALabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB50C901446371200AA5171 /* BALabelViewController.m */; };
 		1FB50C931446371200AA5171 /* BALabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB50C911446371200AA5171 /* BALabelViewController.xib */; };
+		1FBE1A0D14714477004552DC /* NSDate+BADays.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE1A0C14714477004552DC /* NSDate+BADays.m */; };
 		1FC7B7EE138E592800900EA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7B7ED138E592800900EA2 /* UIKit.framework */; };
 		1FC7B7F0138E592800900EA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7B7EF138E592800900EA2 /* Foundation.framework */; };
 		1FC7B7F2138E592800900EA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7B7F1138E592800900EA2 /* CoreGraphics.framework */; };
@@ -161,6 +162,8 @@
 		1FB50C8F1446371200AA5171 /* BALabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALabelViewController.h; sourceTree = "<group>"; };
 		1FB50C901446371200AA5171 /* BALabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALabelViewController.m; sourceTree = "<group>"; };
 		1FB50C911446371200AA5171 /* BALabelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BALabelViewController.xib; sourceTree = "<group>"; };
+		1FBE1A0B14714477004552DC /* NSDate+BADays.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "NSDate+BADays.h"; sourceTree = "<group>"; };
+		1FBE1A0C14714477004552DC /* NSDate+BADays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BADays.m"; sourceTree = "<group>"; };
 		1FC7B7E9138E592800900EA2 /* BADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC7B7ED138E592800900EA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1FC7B7EF138E592800900EA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -327,6 +330,8 @@
 		1F6C8F3B139E733200DA3270 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1FBE1A0B14714477004552DC /* NSDate+BADays.h */,
+				1FBE1A0C14714477004552DC /* NSDate+BADays.m */,
 				1F98005F138E892700B91C2C /* NSString+BACoding.h */,
 				1F980060138E892700B91C2C /* NSString+BACoding.m */,
 				1F98005D138E892700B91C2C /* NSDictionary+BAHTTP.h */,
@@ -546,6 +551,7 @@
 				1FF5AB561467D24F00BA56EF /* BASequenceControl.m in Sources */,
 				1FF5AB5A1467EED000BA56EF /* BASequenceControlViewController.m in Sources */,
 				1F193076147001B10090774A /* BASeparatedTableProvider.m in Sources */,
+				1FBE1A0D14714477004552DC /* NSDate+BADays.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
