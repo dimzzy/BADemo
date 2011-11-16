@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F193076147001B10090774A /* BASeparatedTableProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F193075147001B10090774A /* BASeparatedTableProvider.m */; };
+		1F2C5F3F1473D5EB00FBB1E5 /* BANetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C5F3E1473D5EB00FBB1E5 /* BANetwork.m */; };
 		1F4B38E3138E704D003FE58C /* BADemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B38D9138E704D003FE58C /* BADemoAppDelegate.m */; };
 		1F4B38E4138E704D003FE58C /* BADemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B38DB138E704D003FE58C /* BADemoViewController.m */; };
 		1F4B38E6138E704D003FE58C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F4B38DE138E704D003FE58C /* InfoPlist.strings */; };
@@ -81,6 +82,8 @@
 /* Begin PBXFileReference section */
 		1F193074147001B10090774A /* BASeparatedTableProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASeparatedTableProvider.h; sourceTree = "<group>"; };
 		1F193075147001B10090774A /* BASeparatedTableProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASeparatedTableProvider.m; sourceTree = "<group>"; };
+		1F2C5F3D1473D5EB00FBB1E5 /* BANetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetwork.h; sourceTree = "<group>"; };
+		1F2C5F3E1473D5EB00FBB1E5 /* BANetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANetwork.m; sourceTree = "<group>"; };
 		1F4B38D8138E704D003FE58C /* BADemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADemoAppDelegate.h; sourceTree = "<group>"; };
 		1F4B38D9138E704D003FE58C /* BADemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BADemoAppDelegate.m; sourceTree = "<group>"; };
 		1F4B38DA138E704D003FE58C /* BADemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADemoViewController.h; sourceTree = "<group>"; };
@@ -162,7 +165,7 @@
 		1FB50C8F1446371200AA5171 /* BALabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALabelViewController.h; sourceTree = "<group>"; };
 		1FB50C901446371200AA5171 /* BALabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALabelViewController.m; sourceTree = "<group>"; };
 		1FB50C911446371200AA5171 /* BALabelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BALabelViewController.xib; sourceTree = "<group>"; };
-		1FBE1A0B14714477004552DC /* NSDate+BADays.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "NSDate+BADays.h"; sourceTree = "<group>"; };
+		1FBE1A0B14714477004552DC /* NSDate+BADays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BADays.h"; sourceTree = "<group>"; };
 		1FBE1A0C14714477004552DC /* NSDate+BADays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BADays.m"; sourceTree = "<group>"; };
 		1FC7B7E9138E592800900EA2 /* BADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC7B7ED138E592800900EA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -340,6 +343,8 @@
 				1F98005C138E892700B91C2C /* BANetworkActivity.m */,
 				1F980055138E892700B91C2C /* BAPersistentCache.h */,
 				1F980056138E892700B91C2C /* BAPersistentCache.m */,
+				1F2C5F3D1473D5EB00FBB1E5 /* BANetwork.h */,
+				1F2C5F3E1473D5EB00FBB1E5 /* BANetwork.m */,
 				1F980057138E892700B91C2C /* BADataLoader.h */,
 				1F980058138E892700B91C2C /* BADataLoader.m */,
 				1F980059138E892700B91C2C /* BAJSONLoader.h */,
@@ -552,6 +557,7 @@
 				1FF5AB5A1467EED000BA56EF /* BASequenceControlViewController.m in Sources */,
 				1F193076147001B10090774A /* BASeparatedTableProvider.m in Sources */,
 				1FBE1A0D14714477004552DC /* NSDate+BADays.m in Sources */,
+				1F2C5F3F1473D5EB00FBB1E5 /* BANetwork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
