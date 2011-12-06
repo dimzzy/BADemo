@@ -32,6 +32,7 @@
 @interface BAProgressViewController : UIViewController {
 	IBOutlet BAProgressView *_progressView1;
 	IBOutlet BAProgressView *_progressView2;
+	IBOutlet UIView *_plateView;
 }
 
 - (IBAction)less;

@@ -39,6 +39,7 @@
 		1F7F1009138F00D800E62046 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7F1008138F00D800E62046 /* QuartzCore.framework */; };
 		1F82424B14530BF0005880A6 /* BAPager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F82424714530BF0005880A6 /* BAPager.m */; };
 		1F82424C14530BF0005880A6 /* BASwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F82424914530BF0005880A6 /* BASwitchCell.m */; };
+		1F8A29B9148E4A2100FDF78F /* BAProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A29B8148E4A2100FDF78F /* BAProgressLayer.m */; };
 		1F8B257213F04691005FA6E9 /* UIView+BACookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B257113F04691005FA6E9 /* UIView+BACookie.m */; };
 		1F8B257713F048CB005FA6E9 /* BAViewCookieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B257513F048CB005FA6E9 /* BAViewCookieViewController.m */; };
 		1F8B257813F048CB005FA6E9 /* BAViewCookieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8B257613F048CB005FA6E9 /* BAViewCookieViewController.xib */; };
@@ -138,6 +139,8 @@
 		1F82424714530BF0005880A6 /* BAPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPager.m; sourceTree = "<group>"; };
 		1F82424814530BF0005880A6 /* BASwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASwitchCell.h; sourceTree = "<group>"; };
 		1F82424914530BF0005880A6 /* BASwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASwitchCell.m; sourceTree = "<group>"; };
+		1F8A29B7148E4A2100FDF78F /* BAProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAProgressLayer.h; sourceTree = "<group>"; };
+		1F8A29B8148E4A2100FDF78F /* BAProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAProgressLayer.m; sourceTree = "<group>"; };
 		1F8B257013F04691005FA6E9 /* UIView+BACookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BACookie.h"; sourceTree = "<group>"; };
 		1F8B257113F04691005FA6E9 /* UIView+BACookie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BACookie.m"; sourceTree = "<group>"; };
 		1F8B257413F048CB005FA6E9 /* BAViewCookieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAViewCookieViewController.h; sourceTree = "<group>"; };
@@ -299,6 +302,8 @@
 				1F6D31B3138E970000DEA7FE /* BARemoteImageView.m */,
 				1F6D31B0138E96FF00DEA7FE /* BAPageControl.h */,
 				1F6D31B1138E96FF00DEA7FE /* BAPageControl.m */,
+				1F8A29B7148E4A2100FDF78F /* BAProgressLayer.h */,
+				1F8A29B8148E4A2100FDF78F /* BAProgressLayer.m */,
 				1F7F0FEB138EF27F00E62046 /* BAProgressView.h */,
 				1F7F0FEC138EF27F00E62046 /* BAProgressView.m */,
 				1F7F1000138EFF1200E62046 /* BARefreshHeaderView.h */,
@@ -558,6 +563,7 @@
 				1F193076147001B10090774A /* BASeparatedTableProvider.m in Sources */,
 				1FBE1A0D14714477004552DC /* NSDate+BADays.m in Sources */,
 				1F2C5F3F1473D5EB00FBB1E5 /* BANetwork.m in Sources */,
+				1F8A29B9148E4A2100FDF78F /* BAProgressLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,13 +27,14 @@
 */
 
 #import "BAProgressViewController.h"
-
+#import "BAProgressLayer.h"
 
 @implementation BAProgressViewController
 
 - (void)dealloc {
 	[_progressView1 release];
 	[_progressView2 release];
+	[_plateView release];
     [super dealloc];
 }
 
@@ -43,6 +44,8 @@
 	_progressView1 = nil;
 	[_progressView2 release];
 	_progressView2 = nil;
+	[_plateView release];
+	_plateView = nil;
 }
 
 - (void)viewDidLoad {
@@ -50,6 +53,33 @@
 	_progressView1.progressColor = [UIColor darkGrayColor];
 	_progressView2.progressColor = [UIColor darkGrayColor];
 	_progressView2.failed = YES;
+	
+	BAProgressLayer *l1 = [[[BAProgressLayer alloc] init] autorelease];
+	l1.progress = 0.33;
+	l1.frame = CGRectMake(5, 5, 40, 40);
+	l1.progressColor = [UIColor blackColor].CGColor;
+	l1.backgroundColor = [UIColor clearColor].CGColor;
+	[_plateView.layer addSublayer:l1];
+
+	BAProgressLayer *l2 = [[[BAProgressLayer alloc] init] autorelease];
+	l2.failed = YES;
+	l2.frame = CGRectMake(55, 5, 40, 40);
+	l2.progressColor = [UIColor blackColor].CGColor;
+	l2.backgroundColor = _plateView.backgroundColor.CGColor;
+	[_plateView.layer addSublayer:l2];
+	
+	BAProgressLayer *l3 = [[[BAProgressLayer alloc] init] autorelease];
+	l3.frame = CGRectMake(105, 5, 40, 40);
+	l3.progressColor = [UIColor blackColor].CGColor;
+	l3.backgroundColor = [UIColor clearColor].CGColor;
+	[_plateView.layer addSublayer:l3];
+
+	CABasicAnimation *progressAnimation = [CABasicAnimation animationWithKeyPath:@"progress"];
+	progressAnimation.fromValue = [NSNumber numberWithInt:0];
+	progressAnimation.toValue = [NSNumber numberWithInt:1];
+	progressAnimation.duration = 10;
+	[l3 addAnimation:progressAnimation forKey:@"duration"];
+	l3.progress = 1;
 }
 
 - (IBAction)less {
