@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F093C681497725600A0F35D /* BAViewsCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F093C671497725600A0F35D /* BAViewsCache.m */; };
+		1F093C6C1497738B00A0F35D /* BASimpleReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F093C6B1497738A00A0F35D /* BASimpleReusableView.m */; };
 		1F193076147001B10090774A /* BASeparatedTableProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F193075147001B10090774A /* BASeparatedTableProvider.m */; };
 		1F2C5F3F1473D5EB00FBB1E5 /* BANetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C5F3E1473D5EB00FBB1E5 /* BANetwork.m */; };
 		1F4B38E3138E704D003FE58C /* BADemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B38D9138E704D003FE58C /* BADemoAppDelegate.m */; };
@@ -81,6 +83,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F093C661497725600A0F35D /* BAViewsCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAViewsCache.h; sourceTree = "<group>"; };
+		1F093C671497725600A0F35D /* BAViewsCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAViewsCache.m; sourceTree = "<group>"; };
+		1F093C6A1497738A00A0F35D /* BASimpleReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASimpleReusableView.h; sourceTree = "<group>"; };
+		1F093C6B1497738A00A0F35D /* BASimpleReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASimpleReusableView.m; sourceTree = "<group>"; };
 		1F193074147001B10090774A /* BASeparatedTableProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASeparatedTableProvider.h; sourceTree = "<group>"; };
 		1F193075147001B10090774A /* BASeparatedTableProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASeparatedTableProvider.m; sourceTree = "<group>"; };
 		1F2C5F3D1473D5EB00FBB1E5 /* BANetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetwork.h; sourceTree = "<group>"; };
@@ -331,6 +337,10 @@
 				1FF5AB551467D24F00BA56EF /* BASequenceControl.m */,
 				1F193074147001B10090774A /* BASeparatedTableProvider.h */,
 				1F193075147001B10090774A /* BASeparatedTableProvider.m */,
+				1F093C661497725600A0F35D /* BAViewsCache.h */,
+				1F093C671497725600A0F35D /* BAViewsCache.m */,
+				1F093C6A1497738A00A0F35D /* BASimpleReusableView.h */,
+				1F093C6B1497738A00A0F35D /* BASimpleReusableView.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -564,6 +574,8 @@
 				1FBE1A0D14714477004552DC /* NSDate+BADays.m in Sources */,
 				1F2C5F3F1473D5EB00FBB1E5 /* BANetwork.m in Sources */,
 				1F8A29B9148E4A2100FDF78F /* BAProgressLayer.m in Sources */,
+				1F093C681497725600A0F35D /* BAViewsCache.m in Sources */,
+				1F093C6C1497738B00A0F35D /* BASimpleReusableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
