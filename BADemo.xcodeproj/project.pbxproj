@@ -11,6 +11,7 @@
 		1F093C6C1497738B00A0F35D /* BASimpleReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F093C6B1497738A00A0F35D /* BASimpleReusableView.m */; };
 		1F193076147001B10090774A /* BASeparatedTableProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F193075147001B10090774A /* BASeparatedTableProvider.m */; };
 		1F2C5F3F1473D5EB00FBB1E5 /* BANetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C5F3E1473D5EB00FBB1E5 /* BANetwork.m */; };
+		1F46B3C8149FD43F00EE403D /* BAImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46B3C7149FD43E00EE403D /* BAImageLoader.m */; };
 		1F4B38E3138E704D003FE58C /* BADemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B38D9138E704D003FE58C /* BADemoAppDelegate.m */; };
 		1F4B38E4138E704D003FE58C /* BADemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B38DB138E704D003FE58C /* BADemoViewController.m */; };
 		1F4B38E6138E704D003FE58C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F4B38DE138E704D003FE58C /* InfoPlist.strings */; };
@@ -91,6 +92,8 @@
 		1F193075147001B10090774A /* BASeparatedTableProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASeparatedTableProvider.m; sourceTree = "<group>"; };
 		1F2C5F3D1473D5EB00FBB1E5 /* BANetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetwork.h; sourceTree = "<group>"; };
 		1F2C5F3E1473D5EB00FBB1E5 /* BANetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANetwork.m; sourceTree = "<group>"; };
+		1F46B3C6149FD43E00EE403D /* BAImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAImageLoader.h; sourceTree = "<group>"; };
+		1F46B3C7149FD43E00EE403D /* BAImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAImageLoader.m; sourceTree = "<group>"; };
 		1F4B38D8138E704D003FE58C /* BADemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADemoAppDelegate.h; sourceTree = "<group>"; };
 		1F4B38D9138E704D003FE58C /* BADemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BADemoAppDelegate.m; sourceTree = "<group>"; };
 		1F4B38DA138E704D003FE58C /* BADemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADemoViewController.h; sourceTree = "<group>"; };
@@ -368,6 +371,8 @@
 				1F6D31AC138E959600DEA7FE /* BAXMLParserBase.m */,
 				1F6D31A9138E959600DEA7FE /* BAXMLLoader.h */,
 				1F6D31AA138E959600DEA7FE /* BAXMLLoader.m */,
+				1F46B3C6149FD43E00EE403D /* BAImageLoader.h */,
+				1F46B3C7149FD43E00EE403D /* BAImageLoader.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -576,6 +581,7 @@
 				1F8A29B9148E4A2100FDF78F /* BAProgressLayer.m in Sources */,
 				1F093C681497725600A0F35D /* BAViewsCache.m in Sources */,
 				1F093C6C1497738B00A0F35D /* BASimpleReusableView.m in Sources */,
+				1F46B3C8149FD43F00EE403D /* BAImageLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
