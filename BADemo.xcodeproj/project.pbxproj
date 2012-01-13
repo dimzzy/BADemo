@@ -132,6 +132,9 @@
 		1F7BE44014C05B95009664D6 /* BADataLoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADataLoaderViewController.h; sourceTree = "<group>"; };
 		1F7BE44114C05B95009664D6 /* BADataLoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BADataLoaderViewController.m; sourceTree = "<group>"; };
 		1F7BE44214C05B96009664D6 /* BADataLoaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BADataLoaderViewController.xib; sourceTree = "<group>"; };
+		1F7BE46C14C06FE1009664D6 /* BaseAppKitCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAppKitCore.h; sourceTree = "<group>"; };
+		1F7BE46E14C070DD009664D6 /* BaseAppKitUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAppKitUI.h; sourceTree = "<group>"; };
+		1F7BE46F14C07282009664D6 /* BaseAppKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAppKit.h; sourceTree = "<group>"; };
 		1F7F0FE1138EED8100E62046 /* BAPageControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPageControlViewController.h; sourceTree = "<group>"; };
 		1F7F0FE2138EED8100E62046 /* BAPageControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPageControlViewController.m; sourceTree = "<group>"; };
 		1F7F0FE3138EED8100E62046 /* BAPageControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAPageControlViewController.xib; sourceTree = "<group>"; };
@@ -312,10 +315,6 @@
 		1F6C8F3A139E732800DA3270 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				1F82424614530BF0005880A6 /* BAPager.h */,
-				1F82424714530BF0005880A6 /* BAPager.m */,
-				1F82424814530BF0005880A6 /* BASwitchCell.h */,
-				1F82424914530BF0005880A6 /* BASwitchCell.m */,
 				1FD6286813AA51C000D269EB /* BACommon.h */,
 				1F8B257013F04691005FA6E9 /* UIView+BACookie.h */,
 				1F8B257113F04691005FA6E9 /* UIView+BACookie.m */,
@@ -323,6 +322,8 @@
 				1F7F0FFD138EFF1200E62046 /* UINavigationController+BATransitions.m */,
 				1F7F0FFE138EFF1200E62046 /* UITableView+BALoading.h */,
 				1F7F0FFF138EFF1200E62046 /* UITableView+BALoading.m */,
+				1F82424614530BF0005880A6 /* BAPager.h */,
+				1F82424714530BF0005880A6 /* BAPager.m */,
 				1F6D31B2138E96FF00DEA7FE /* BARemoteImageView.h */,
 				1F6D31B3138E970000DEA7FE /* BARemoteImageView.m */,
 				1F6D31B0138E96FF00DEA7FE /* BAPageControl.h */,
@@ -352,6 +353,8 @@
 				1FB50C8C1446369700AA5171 /* BALabel.m */,
 				1FECC3AA13F2DD4700FCDBEF /* BAEditableCell.h */,
 				1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */,
+				1F82424814530BF0005880A6 /* BASwitchCell.h */,
+				1F82424914530BF0005880A6 /* BASwitchCell.m */,
 				1FF5AB541467D24F00BA56EF /* BASequenceControl.h */,
 				1FF5AB551467D24F00BA56EF /* BASequenceControl.m */,
 				1F193074147001B10090774A /* BASeparatedTableProvider.h */,
@@ -396,6 +399,9 @@
 		1F980054138E892700B91C2C /* BaseAppKit */ = {
 			isa = PBXGroup;
 			children = (
+				1F7BE46F14C07282009664D6 /* BaseAppKit.h */,
+				1F7BE46C14C06FE1009664D6 /* BaseAppKitCore.h */,
+				1F7BE46E14C070DD009664D6 /* BaseAppKitUI.h */,
 				1F6C8F3B139E733200DA3270 /* Core */,
 				1F6C8F3A139E732800DA3270 /* UI */,
 				1FF5AB4B1467D20300BA56EF /* Images */,
