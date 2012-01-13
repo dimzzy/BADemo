@@ -36,6 +36,7 @@
 #import "BASimpleEditableTableViewController.h"
 #import "BALabelViewController.h"
 #import "BASequenceControlViewController.h"
+#import "BADaysViewController.h"
 
 @implementation BADemoViewController
 
@@ -44,7 +45,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 9;
+	return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -79,6 +80,9 @@
 			break;
 		case 8:
 			cell.textLabel.text = @"Sequence Control";
+			break;
+		case 9:
+			cell.textLabel.text = @"Days";
 			break;
 	}
 	return cell;
@@ -147,6 +151,13 @@
 		case 8: {
 			BASequenceControlViewController *controller = [[[BASequenceControlViewController alloc] initWithNibName:@"BASequenceControlViewController"
 																											 bundle:nil] autorelease];
+			controller.navigationItem.title = title;
+			[self.navigationController pushViewController:controller animated:YES];
+			break;
+		}
+		case 9: {
+			BADaysViewController *controller = [[[BADaysViewController alloc] initWithNibName:@"BADaysViewController"
+																					   bundle:nil] autorelease];
 			controller.navigationItem.title = title;
 			[self.navigationController pushViewController:controller animated:YES];
 			break;
