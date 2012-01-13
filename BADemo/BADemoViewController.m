@@ -37,6 +37,7 @@
 #import "BALabelViewController.h"
 #import "BASequenceControlViewController.h"
 #import "BADaysViewController.h"
+#import "BADataLoaderViewController.h"
 
 @implementation BADemoViewController
 
@@ -45,13 +46,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 10;
+	return 11;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
 	if (!cell) {
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+									   reuseIdentifier:@"Cell"] autorelease];
 	}
 	switch (indexPath.row) {
 		case 0:
@@ -83,6 +85,9 @@
 			break;
 		case 9:
 			cell.textLabel.text = @"Days";
+			break;
+		case 10:
+			cell.textLabel.text = @"Data Loader";
 			break;
 	}
 	return cell;
@@ -158,6 +163,13 @@
 		case 9: {
 			BADaysViewController *controller = [[[BADaysViewController alloc] initWithNibName:@"BADaysViewController"
 																					   bundle:nil] autorelease];
+			controller.navigationItem.title = title;
+			[self.navigationController pushViewController:controller animated:YES];
+			break;
+		}
+		case 10: {
+			BADataLoaderViewController *controller = [[[BADataLoaderViewController alloc] initWithNibName:@"BADataLoaderViewController"
+																								   bundle:nil] autorelease];
 			controller.navigationItem.title = title;
 			[self.navigationController pushViewController:controller animated:YES];
 			break;

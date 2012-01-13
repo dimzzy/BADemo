@@ -118,7 +118,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableViewA cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	BAEditableCell *cell = (BAEditableCell *)[tableViewA dequeueReusableCellWithIdentifier:@"LoginCell"];
 	if (!cell) {
-		cell = [[BAEditableCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"LoginCell"];
+		cell = [[[BAEditableCell alloc] initWithStyle:UITableViewCellStyleValue1
+									  reuseIdentifier:@"LoginCell"] autorelease];
 	}
 	cell.textField.delegate = self;
 	[cell.textField removeTarget:nil action:NULL forControlEvents:UIControlEventEditingChanged];

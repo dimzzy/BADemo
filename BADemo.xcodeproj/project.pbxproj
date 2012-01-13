@@ -30,6 +30,8 @@
 		1F75710A13A239450015AA92 /* form-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F75710913A239450015AA92 /* form-button.png */; };
 		1F7BE43D14C04B09009664D6 /* BADaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7BE43B14C04B09009664D6 /* BADaysViewController.m */; };
 		1F7BE43E14C04B09009664D6 /* BADaysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F7BE43C14C04B09009664D6 /* BADaysViewController.xib */; };
+		1F7BE44314C05B96009664D6 /* BADataLoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7BE44114C05B95009664D6 /* BADataLoaderViewController.m */; };
+		1F7BE44414C05B96009664D6 /* BADataLoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F7BE44214C05B96009664D6 /* BADataLoaderViewController.xib */; };
 		1F7F0FE4138EED8100E62046 /* BAPageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F0FE2138EED8100E62046 /* BAPageControlViewController.m */; };
 		1F7F0FE5138EED8100E62046 /* BAPageControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F7F0FE3138EED8100E62046 /* BAPageControlViewController.xib */; };
 		1F7F0FEF138EF27F00E62046 /* BAProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7F0FEC138EF27F00E62046 /* BAProgressView.m */; };
@@ -127,6 +129,9 @@
 		1F7BE43A14C04B09009664D6 /* BADaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADaysViewController.h; sourceTree = "<group>"; };
 		1F7BE43B14C04B09009664D6 /* BADaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BADaysViewController.m; sourceTree = "<group>"; };
 		1F7BE43C14C04B09009664D6 /* BADaysViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BADaysViewController.xib; sourceTree = "<group>"; };
+		1F7BE44014C05B95009664D6 /* BADataLoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADataLoaderViewController.h; sourceTree = "<group>"; };
+		1F7BE44114C05B95009664D6 /* BADataLoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BADataLoaderViewController.m; sourceTree = "<group>"; };
+		1F7BE44214C05B96009664D6 /* BADataLoaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BADataLoaderViewController.xib; sourceTree = "<group>"; };
 		1F7F0FE1138EED8100E62046 /* BAPageControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPageControlViewController.h; sourceTree = "<group>"; };
 		1F7F0FE2138EED8100E62046 /* BAPageControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPageControlViewController.m; sourceTree = "<group>"; };
 		1F7F0FE3138EED8100E62046 /* BAPageControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAPageControlViewController.xib; sourceTree = "<group>"; };
@@ -287,6 +292,9 @@
 				1F7BE43A14C04B09009664D6 /* BADaysViewController.h */,
 				1F7BE43B14C04B09009664D6 /* BADaysViewController.m */,
 				1F7BE43C14C04B09009664D6 /* BADaysViewController.xib */,
+				1F7BE44014C05B95009664D6 /* BADataLoaderViewController.h */,
+				1F7BE44114C05B95009664D6 /* BADataLoaderViewController.m */,
+				1F7BE44214C05B96009664D6 /* BADataLoaderViewController.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -527,6 +535,7 @@
 				1FF5AB531467D20300BA56EF /* ba-sequence-item-passive@2x.png in Resources */,
 				1FF5AB5B1467EED000BA56EF /* BASequenceControlViewController.xib in Resources */,
 				1F7BE43E14C04B09009664D6 /* BADaysViewController.xib in Resources */,
+				1F7BE44414C05B96009664D6 /* BADataLoaderViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +601,7 @@
 				1F093C6C1497738B00A0F35D /* BASimpleReusableView.m in Sources */,
 				1F46B3C8149FD43F00EE403D /* BAImageLoader.m in Sources */,
 				1F7BE43D14C04B09009664D6 /* BADaysViewController.m in Sources */,
+				1F7BE44314C05B96009664D6 /* BADataLoaderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
