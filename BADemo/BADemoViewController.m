@@ -38,6 +38,7 @@
 #import "BASequenceControlViewController.h"
 #import "BADaysViewController.h"
 #import "BADataLoaderViewController.h"
+#import "BAGridViewController.h"
 
 @implementation BADemoViewController
 
@@ -46,7 +47,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 11;
+	return 12;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -88,6 +89,9 @@
 			break;
 		case 10:
 			cell.textLabel.text = @"Data Loader";
+			break;
+		case 11:
+			cell.textLabel.text = @"Grid";
 			break;
 	}
 	return cell;
@@ -170,6 +174,13 @@
 		case 10: {
 			BADataLoaderViewController *controller = [[[BADataLoaderViewController alloc] initWithNibName:@"BADataLoaderViewController"
 																								   bundle:nil] autorelease];
+			controller.navigationItem.title = title;
+			[self.navigationController pushViewController:controller animated:YES];
+			break;
+		}
+		case 11: {
+			BAGridViewController *controller = [[[BAGridViewController alloc] initWithNibName:@"BAGridViewController"
+																					   bundle:nil] autorelease];
 			controller.navigationItem.title = title;
 			[self.navigationController pushViewController:controller animated:YES];
 			break;
