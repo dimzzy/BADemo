@@ -70,6 +70,8 @@
 	self.gridView.dataSource = self;
 	self.gridView.delegate = self;
 	self.gridView.cellSize = CGSizeMake(80, 30);
+	self.gridView.sectionHeaderHeight = 30;
+	self.gridView.sectionFooterHeight = 50;
 	self.gridView.backgroundColor = [UIColor grayColor];
 	[self.view addSubview:self.gridView];
 }
@@ -107,6 +109,25 @@
 	[tv setNeedsDisplay];
 	tv.backgroundColor = indexPath.gridSection % 2 ? [UIColor yellowColor] : [UIColor orangeColor];
 	return cell;
+}
+
+//- (CGFloat)gridView:(BAGridView *)gridView heightForHeaderInSection:(NSInteger)section;
+//- (CGFloat)gridView:(BAGridView *)gridView heightForFooterInSection:(NSInteger)section;
+
+- (UIView *)gridView:(BAGridView *)gridView viewForHeaderInSection:(NSInteger)section {
+	UILabel *view = [[[UILabel alloc] initWithFrame:CGRectZero] autorelease];
+	view.text = [NSString stringWithFormat:@"Section Header %d", section];
+	view.font = [UIFont systemFontOfSize:13];
+	view.backgroundColor = [UIColor magentaColor];
+	return view;
+}
+
+- (UIView *)gridView:(BAGridView *)gridView viewForFooterInSection:(NSInteger)section {
+	UILabel *view = [[[UILabel alloc] initWithFrame:CGRectZero] autorelease];
+	view.text = [NSString stringWithFormat:@"Section Footer %d", section];
+	view.font = [UIFont boldSystemFontOfSize:13];
+	view.backgroundColor = [UIColor greenColor];
+	return view;
 }
 
 @end
