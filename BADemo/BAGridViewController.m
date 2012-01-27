@@ -69,7 +69,7 @@
 	self.gridView = [[[BAGridView alloc] initWithFrame:self.view.bounds] autorelease];
 	self.gridView.dataSource = self;
 	self.gridView.delegate = self;
-	self.gridView.rowHeight = 50;
+	self.gridView.cellSize = CGSizeMake(80, 30);
 	self.gridView.backgroundColor = [UIColor grayColor];
 	[self.view addSubview:self.gridView];
 }
@@ -92,7 +92,10 @@
 	BAGridViewCell *cell = [gridView dequeueReusableCellWithIdentifier:@"GCell"];
 	if (!cell) {
 		cell = [[[BAGridViewCell alloc] initWithReuseIdentifier:@"GCell"] autorelease];
+		cell.frame = f;
 		tv = [[[BAGridTestView alloc] initWithFrame:f] autorelease];
+		tv.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+		tv.contentMode = UIViewContentModeRedraw;
 		[cell.contentView addSubview:tv];
 	} else {
 		tv = [cell.contentView.subviews objectAtIndex:0];
