@@ -71,6 +71,11 @@
 		1FC7B7EE138E592800900EA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7B7ED138E592800900EA2 /* UIKit.framework */; };
 		1FC7B7F0138E592800900EA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7B7EF138E592800900EA2 /* Foundation.framework */; };
 		1FC7B7F2138E592800900EA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7B7F1138E592800900EA2 /* CoreGraphics.framework */; };
+		1FD8DEA514D6EBBF0068D009 /* BARefreshHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD8DEA314D6EBBF0068D009 /* BARefreshHeaderViewController.m */; };
+		1FD8DEA614D6EBBF0068D009 /* BARefreshHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD8DEA414D6EBBF0068D009 /* BARefreshHeaderViewController.xib */; };
+		1FD8DEAA14D6FC8C0068D009 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FD8DEA814D6FC8C0068D009 /* Localizable.strings */; };
+		1FD8DEAD14D707030068D009 /* ba-refresh-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FD8DEAB14D707030068D009 /* ba-refresh-black.png */; };
+		1FD8DEAE14D707030068D009 /* ba-refresh-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FD8DEAC14D707030068D009 /* ba-refresh-black@2x.png */; };
 		1FECC3AE13F2DD4700FCDBEF /* BAEditableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */; };
 		1FECC3AF13F2DD4700FCDBEF /* BARemoteImageToggleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3AD13F2DD4700FCDBEF /* BARemoteImageToggleItem.m */; };
 		1FECC3B413F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3B213F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m */; };
@@ -211,6 +216,12 @@
 		1FC7B7EF138E592800900EA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FC7B7F1138E592800900EA2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1FD6286813AA51C000D269EB /* BACommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACommon.h; sourceTree = "<group>"; };
+		1FD8DEA214D6EBBF0068D009 /* BARefreshHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BARefreshHeaderViewController.h; sourceTree = "<group>"; };
+		1FD8DEA314D6EBBF0068D009 /* BARefreshHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BARefreshHeaderViewController.m; sourceTree = "<group>"; };
+		1FD8DEA414D6EBBF0068D009 /* BARefreshHeaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BARefreshHeaderViewController.xib; sourceTree = "<group>"; };
+		1FD8DEA914D6FC8C0068D009 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		1FD8DEAB14D707030068D009 /* ba-refresh-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ba-refresh-black.png"; sourceTree = "<group>"; };
+		1FD8DEAC14D707030068D009 /* ba-refresh-black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ba-refresh-black@2x.png"; sourceTree = "<group>"; };
 		1FECC3AA13F2DD4700FCDBEF /* BAEditableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAEditableCell.h; sourceTree = "<group>"; };
 		1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAEditableCell.m; sourceTree = "<group>"; };
 		1FECC3AC13F2DD4700FCDBEF /* BARemoteImageToggleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BARemoteImageToggleItem.h; sourceTree = "<group>"; };
@@ -274,6 +285,7 @@
 				1F75710913A239450015AA92 /* form-button.png */,
 				1F4B38DE138E704D003FE58C /* InfoPlist.strings */,
 				1F4B38E0138E704D003FE58C /* Info.plist */,
+				1FD8DEA814D6FC8C0068D009 /* Localizable.strings */,
 				1F4B38E1138E704D003FE58C /* main.m */,
 			);
 			path = BADemo;
@@ -315,6 +327,9 @@
 				1F0C62A614CD7E9A005FE1BB /* BAGridViewController.h */,
 				1F0C62A714CD7E9A005FE1BB /* BAGridViewController.m */,
 				1F0C62A814CD7E9A005FE1BB /* BAGridViewController.xib */,
+				1FD8DEA214D6EBBF0068D009 /* BARefreshHeaderViewController.h */,
+				1FD8DEA314D6EBBF0068D009 /* BARefreshHeaderViewController.m */,
+				1FD8DEA414D6EBBF0068D009 /* BARefreshHeaderViewController.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -465,6 +480,8 @@
 		1FF5AB4B1467D20300BA56EF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1FD8DEAB14D707030068D009 /* ba-refresh-black.png */,
+				1FD8DEAC14D707030068D009 /* ba-refresh-black@2x.png */,
 				1FF5AB4C1467D20300BA56EF /* ba-sequence-item-active.png */,
 				1FF5AB4D1467D20300BA56EF /* ba-sequence-item-active@2x.png */,
 				1FF5AB4E1467D20300BA56EF /* ba-sequence-item-passive.png */,
@@ -566,6 +583,10 @@
 				1F7BE43E14C04B09009664D6 /* BADaysViewController.xib in Resources */,
 				1F7BE44414C05B96009664D6 /* BADataLoaderViewController.xib in Resources */,
 				1F0C62AA14CD7E9A005FE1BB /* BAGridViewController.xib in Resources */,
+				1FD8DEA614D6EBBF0068D009 /* BARefreshHeaderViewController.xib in Resources */,
+				1FD8DEAA14D6FC8C0068D009 /* Localizable.strings in Resources */,
+				1FD8DEAD14D707030068D009 /* ba-refresh-black.png in Resources */,
+				1FD8DEAE14D707030068D009 /* ba-refresh-black@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +657,7 @@
 				1F41D24614C97D0F0073E1FF /* BAGridViewCell.m in Sources */,
 				1F0C62A914CD7E9A005FE1BB /* BAGridViewController.m in Sources */,
 				1F3CD8A114CE16E5003872C9 /* BAScrollViewProxyDelegate.m in Sources */,
+				1FD8DEA514D6EBBF0068D009 /* BARefreshHeaderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +670,14 @@
 				1F4B38DF138E704D003FE58C /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1FD8DEA814D6FC8C0068D009 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FD8DEA914D6FC8C0068D009 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

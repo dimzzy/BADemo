@@ -39,15 +39,68 @@
 #import "BADaysViewController.h"
 #import "BADataLoaderViewController.h"
 #import "BAGridViewController.h"
+#import "BARefreshHeaderViewController.h"
 
-@implementation BADemoViewController
+@implementation BADemoViewController {
+@private
+	NSMutableArray *_labels;
+	NSMutableArray *_controllerClasses;
+}
 
 - (void)dealloc {
+	[_labels release];
+	[_controllerClasses release];
     [super dealloc];
 }
 
+- (void)setupContent {
+	_labels = [[NSMutableArray alloc] init];
+	_controllerClasses = [[NSMutableArray alloc] init];
+
+	[_labels addObject:@"Days"];
+	[_controllerClasses addObject:@"BADaysViewController"];
+	[_labels addObject:@"Data Loader"];
+	[_controllerClasses addObject:@"BADataLoaderViewController"];
+	[_labels addObject:@"Label"];
+	[_controllerClasses addObject:@"BALabelViewController"];
+	[_labels addObject:@"Refresh Header View"];
+	[_controllerClasses addObject:@"BARefreshHeaderViewController"];
+	[_labels addObject:@"Progress View"];
+	[_controllerClasses addObject:@"BAProgressViewController"];
+	[_labels addObject:@"Activity View"];
+	[_controllerClasses addObject:@"BAActivityViewController"];
+	[_labels addObject:@"Gradient View"];
+	[_controllerClasses addObject:@"BAGradientViewController"];
+	[_labels addObject:@"Grid View"];
+	[_controllerClasses addObject:@"BAGridViewController"];
+	[_labels addObject:@"Sequence Control"];
+	[_controllerClasses addObject:@"BASequenceControlViewController"];
+	[_labels addObject:@"Page Control"];
+	[_controllerClasses addObject:@"BAPageControlViewController"];
+	[_labels addObject:@"View's Cookie"];
+	[_controllerClasses addObject:@"BAViewCookieViewController"];
+	[_labels addObject:@"Form"];
+	[_controllerClasses addObject:@"BAFormViewController"];
+	[_labels addObject:@"Editable Table"];
+	[_controllerClasses addObject:@"BASimpleEditableTableViewController"];
+}
+
+- (NSArray *)labels {
+	if (!_labels) {
+		[self setupContent];
+	}
+	return _labels;
+}
+
+- (NSArray *)controllerClasses {
+	if (!_controllerClasses) {
+		[self setupContent];
+	}
+	return _controllerClasses;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 12;
+	return [[self labels] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -56,136 +109,18 @@
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
 									   reuseIdentifier:@"Cell"] autorelease];
 	}
-	switch (indexPath.row) {
-		case 0:
-			cell.textLabel.text = @"Page Control";
-			break;
-		case 1:
-			cell.textLabel.text = @"Progress View";
-			break;
-		case 2:
-			cell.textLabel.text = @"Activity View";
-			break;
-		case 3:
-			cell.textLabel.text = @"Gradient View";
-			break;
-		case 4:
-			cell.textLabel.text = @"Form";
-			break;
-		case 5:
-			cell.textLabel.text = @"View's Cookie";
-			break;
-		case 6:
-			cell.textLabel.text = @"Editable Table";
-			break;
-		case 7:
-			cell.textLabel.text = @"Label";
-			break;
-		case 8:
-			cell.textLabel.text = @"Sequence Control";
-			break;
-		case 9:
-			cell.textLabel.text = @"Days";
-			break;
-		case 10:
-			cell.textLabel.text = @"Data Loader";
-			break;
-		case 11:
-			cell.textLabel.text = @"Grid";
-			break;
-	}
+	cell.textLabel.text = [[self labels] objectAtIndex:indexPath.row];
 	return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
 	NSString *title = cell.textLabel.text;
-	switch (indexPath.row) {
-		case 0: {
-			BAPageControlViewController *controller = [[[BAPageControlViewController alloc] initWithNibName:@"BAPageControlViewController"
-																									 bundle:nil] autorelease];
-			controller.navigationItem.title = title;
-			[self.navigationController pushViewController:controller animated:YES];
-			break;
-		}
-		case 1: {
-			BAProgressViewController *controller = [[[BAProgressViewController alloc] initWithNibName:@"BAProgressViewController"
-																							   bundle:nil] autorelease];
-			controller.navigationItem.title = title;
-			[self.navigationController pushViewController:controller animated:YES];
-			break;
-		}
-		case 2: {
-			BAActivityViewController *controller = [[[BAActivityViewController alloc] initWithNibName:@"BAActivityViewController"
-																							   bundle:nil] autorelease];
-			controller.navigationItem.title = title;
-			[self.navigationController pushViewController:controller animated:YES];
-			break;
-		}
-		case 3: {
-			BAGradientViewController *controller = [[[BAGradientViewController alloc] initWithNibName:@"BAGradientViewController"
-																							   bundle:nil] autorelease];
-			controller.navigationItem.title = title;
-			[self.navigationController pushViewController:controller animated:YES];
-			break;
-		}
-		case 4: {
-			BAFormViewController *controller = [[[BAFormViewController alloc] initWithNibName:@"BAFormViewController"
-																					   bundle:nil] autorelease];
-			controller.navigationItem.title = title;
-			[self.navigationController pushViewController:controller animated:YES];
-			break;
-		}
-		case 5: {
-			BAViewCookieViewController *controller = [[[BAViewCookieViewController alloc] initWithNibName:@"BAViewCookieViewController"
-																								   bundle:nil] autorelease];
-			controller.navigationItem.title = title;
-			[self.navigationController pushViewController:controller animated:YES];
-			break;
-		}
-		case 6: {
-			BASimpleEditableTableViewController *controller = [[[BASimpleEditableTableViewController alloc] initWithNibName:@"BASimpleEditableTableViewController"
-																													 bundle:nil] autorelease];
-			controller.navigationItem.title = title;
-			[self.navigationController pushViewController:controller animated:YES];
-			break;
-		}
-		case 7: {
-			BALabelViewController *controller = [[[BALabelViewController alloc] initWithNibName:@"BALabelViewController"
-																						 bundle:nil] autorelease];
-			controller.navigationItem.title = title;
-			[self.navigationController pushViewController:controller animated:YES];
-			break;
-		}
-		case 8: {
-			BASequenceControlViewController *controller = [[[BASequenceControlViewController alloc] initWithNibName:@"BASequenceControlViewController"
-																											 bundle:nil] autorelease];
-			controller.navigationItem.title = title;
-			[self.navigationController pushViewController:controller animated:YES];
-			break;
-		}
-		case 9: {
-			BADaysViewController *controller = [[[BADaysViewController alloc] initWithNibName:@"BADaysViewController"
-																					   bundle:nil] autorelease];
-			controller.navigationItem.title = title;
-			[self.navigationController pushViewController:controller animated:YES];
-			break;
-		}
-		case 10: {
-			BADataLoaderViewController *controller = [[[BADataLoaderViewController alloc] initWithNibName:@"BADataLoaderViewController"
-																								   bundle:nil] autorelease];
-			controller.navigationItem.title = title;
-			[self.navigationController pushViewController:controller animated:YES];
-			break;
-		}
-		case 11: {
-			BAGridViewController *controller = [[[BAGridViewController alloc] initWithNibName:@"BAGridViewController"
-																					   bundle:nil] autorelease];
-			controller.navigationItem.title = title;
-			[self.navigationController pushViewController:controller animated:YES];
-			break;
-		}
-	}
+	NSString *controllerClassName = [[self controllerClasses] objectAtIndex:indexPath.row];
+	Class controllerClass = NSClassFromString(controllerClassName);
+	UIViewController *controller = [[[controllerClass alloc] initWithNibName:controllerClassName bundle:nil] autorelease];
+	controller.navigationItem.title = title;
+	[self.navigationController pushViewController:controller animated:YES];
 }
 
 @end
