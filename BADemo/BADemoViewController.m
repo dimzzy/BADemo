@@ -40,6 +40,7 @@
 #import "BADataLoaderViewController.h"
 #import "BAGridViewController.h"
 #import "BARefreshHeaderViewController.h"
+#import "BASeparatedTableViewController.h"
 
 @implementation BADemoViewController {
 @private
@@ -81,6 +82,8 @@
 	[_controllerClasses addObject:@"BAViewCookieViewController"];
 	[_labels addObject:@"Form"];
 	[_controllerClasses addObject:@"BAFormViewController"];
+	[_labels addObject:@"Separated Table"];
+	[_controllerClasses addObject:@"BASeparatedTableViewController"];
 	[_labels addObject:@"Editable Table"];
 	[_controllerClasses addObject:@"BASimpleEditableTableViewController"];
 }
