@@ -27,10 +27,10 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "BAGridView.h"
+#import "BAMeshView.h"
 
-@interface BAGridViewController : UIViewController <BAGridViewDataSource, BAGridViewDelegate>
+@interface BAMeshViewController : UIViewController <BAMeshViewDataSource, BAMeshViewDelegate>
 
-@property(retain) IBOutlet BAGridView *gridView;
+@property(retain) IBOutlet BAMeshView *meshView;
 
 @end

@@ -26,24 +26,24 @@
  or implied, of Dmitry Stadnik.
  */
 
-#import "BAGridViewController.h"
+#import "BAMeshViewController.h"
 
-@interface BAGridTestView : UIView
+@interface BAmeshTestView : UIView
 
-@property int sec, row, col;
+@property int sec, cell;
 
 @end
 
 
-@implementation BAGridTestView
+@implementation BAmeshTestView
 
-@synthesize sec, row, col;
+@synthesize sec, cell;
 
 - (void)drawRect:(CGRect)rect {
 	[super drawRect:rect];
 	[[UIColor blackColor] set];
 	[[UIBezierPath bezierPathWithOvalInRect:CGRectInset(self.bounds, 0.5, 0.5)] stroke];
-	NSString *s = [NSString stringWithFormat:@"%d:%d:%d", self.sec, self.row, self.col];
+	NSString *s = [NSString stringWithFormat:@"%d:%d", self.sec, self.cell];
 	UIFont *font = [UIFont systemFontOfSize:13];
 	CGSize ss = [s sizeWithFont:font];
 	CGRect sr = CGRectMake((self.bounds.size.width - ss.width) / 2,
@@ -55,47 +55,43 @@
 @end
 
 
-@implementation BAGridViewController
+@implementation BAMeshViewController
 
-@synthesize gridView = _gridView;
+@synthesize meshView = _meshView;
 
 - (void)dealloc {
-	self.gridView = nil;
+	self.meshView = nil;
     [super dealloc];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.gridView = [[[BAGridView alloc] initWithFrame:self.view.bounds] autorelease];
-	self.gridView.dataSource = self;
-	self.gridView.delegate = self;
-	self.gridView.cellSize = CGSizeMake(80, 30);
-	self.gridView.sectionHeaderHeight = 30;
-	self.gridView.sectionFooterHeight = 50;
-	self.gridView.backgroundColor = [UIColor grayColor];
-	[self.view addSubview:self.gridView];
+	self.meshView = [[[BAMeshView alloc] initWithFrame:self.view.bounds] autorelease];
+	self.meshView.dataSource = self;
+	self.meshView.delegate = self;
+	self.meshView.cellSize = CGSizeMake(80, 30);
+	self.meshView.sectionHeaderHeight = 30;
+	self.meshView.sectionFooterHeight = 50;
+	self.meshView.backgroundColor = [UIColor grayColor];
+	[self.view addSubview:self.meshView];
 }
 
-- (NSInteger)numberOfSectionsInGridView:(BAGridView *)gridView {
+- (NSInteger)numberOfSectionsInMeshView:(BAMeshView *)meshView {
 	return 4;
 }
 
-- (NSInteger)gridView:(BAGridView *)gridView numberOfRowsInSection:(NSInteger)section {
-	return 5;
+- (NSInteger)meshView:(BAMeshView *)meshView numberOfCellsInSection:(NSInteger)section {
+	return 15;
 }
 
-- (NSInteger)gridView:(BAGridView *)gridView numberOfColumnsInRow:(NSInteger)row inSection:(NSInteger)section {
-	return 3;
-}
-
-- (BAGridViewCell *)gridView:(BAGridView *)gridView cellAtIndexPath:(NSIndexPath *)indexPath {
+- (BAMeshViewCell *)meshView:(BAMeshView *)meshView cellAtIndexPath:(NSIndexPath *)indexPath {
 	CGRect f = CGRectMake(0, 0, 100, 50);
-	BAGridTestView *tv = nil;
-	BAGridViewCell *cell = [gridView dequeueReusableCellWithIdentifier:@"GCell"];
+	BAmeshTestView *tv = nil;
+	BAMeshViewCell *cell = [meshView dequeueReusableCellWithIdentifier:@"ACell"];
 	if (!cell) {
-		cell = [[[BAGridViewCell alloc] initWithReuseIdentifier:@"GCell"] autorelease];
+		cell = [[[BAMeshViewCell alloc] initWithReuseIdentifier:@"ACell"] autorelease];
 		cell.frame = f;
-		tv = [[[BAGridTestView alloc] initWithFrame:f] autorelease];
+		tv = [[[BAmeshTestView alloc] initWithFrame:f] autorelease];
 		tv.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 		tv.contentMode = UIViewContentModeRedraw;
 		[cell.contentView addSubview:tv];
@@ -103,18 +99,17 @@
 		tv = [cell.contentView.subviews objectAtIndex:0];
 	}
 	cell.frame = f;
-	tv.sec = indexPath.gridSection;
-	tv.row = indexPath.gridRow;
-	tv.col = indexPath.gridColumn;
+	tv.sec = indexPath.meshSection;
+	tv.cell = indexPath.meshCell;
 	[tv setNeedsDisplay];
-	tv.backgroundColor = indexPath.gridSection % 2 ? [UIColor yellowColor] : [UIColor orangeColor];
+	tv.backgroundColor = indexPath.meshSection % 2 ? [UIColor yellowColor] : [UIColor orangeColor];
 	return cell;
 }
 
-//- (CGFloat)gridView:(BAGridView *)gridView heightForHeaderInSection:(NSInteger)section;
-//- (CGFloat)gridView:(BAGridView *)gridView heightForFooterInSection:(NSInteger)section;
+//- (CGFloat)meshView:(BAMeshView *)meshView heightForHeaderInSection:(NSInteger)section;
+//- (CGFloat)meshView:(BAMeshView *)meshView heightForFooterInSection:(NSInteger)section;
 
-- (UIView *)gridView:(BAGridView *)gridView viewForHeaderInSection:(NSInteger)section {
+- (UIView *)meshView:(BAMeshView *)meshView viewForHeaderInSection:(NSInteger)section {
 	UILabel *view = [[[UILabel alloc] initWithFrame:CGRectZero] autorelease];
 	view.text = [NSString stringWithFormat:@"Section Header %d", section];
 	view.font = [UIFont systemFontOfSize:13];
@@ -122,7 +117,7 @@
 	return view;
 }
 
-- (UIView *)gridView:(BAGridView *)gridView viewForFooterInSection:(NSInteger)section {
+- (UIView *)meshView:(BAMeshView *)meshView viewForFooterInSection:(NSInteger)section {
 	UILabel *view = [[[UILabel alloc] initWithFrame:CGRectZero] autorelease];
 	view.text = [NSString stringWithFormat:@"Section Footer %d", section];
 	view.font = [UIFont boldSystemFontOfSize:13];

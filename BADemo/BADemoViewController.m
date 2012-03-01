@@ -38,7 +38,7 @@
 #import "BASequenceControlViewController.h"
 #import "BADaysViewController.h"
 #import "BADataLoaderViewController.h"
-#import "BAGridViewController.h"
+#import "BAMeshViewController.h"
 #import "BARefreshHeaderViewController.h"
 #import "BASeparatedTableViewController.h"
 
@@ -72,8 +72,8 @@
 	[_controllerClasses addObject:@"BAActivityViewController"];
 	[_labels addObject:@"Gradient View"];
 	[_controllerClasses addObject:@"BAGradientViewController"];
-	[_labels addObject:@"Grid View"];
-	[_controllerClasses addObject:@"BAGridViewController"];
+	[_labels addObject:@"Mesh View"];
+	[_controllerClasses addObject:@"BAMeshViewController"];
 	[_labels addObject:@"Sequence Control"];
 	[_controllerClasses addObject:@"BASequenceControlViewController"];
 	[_labels addObject:@"Page Control"];
