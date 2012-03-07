@@ -109,6 +109,32 @@
 //- (CGFloat)meshView:(BAMeshView *)meshView heightForHeaderInSection:(NSInteger)section;
 //- (CGFloat)meshView:(BAMeshView *)meshView heightForFooterInSection:(NSInteger)section;
 
+- (CGSize)meshView:(BAMeshView *)meshView sizeForCellAtIndexPath:(NSIndexPath *)indexPath {
+	return CGSizeMake(70, 20 + 10 * indexPath.meshCell);
+}
+
+- (BAMeshRowLayout)meshView:(BAMeshView *)meshView rowsLayoutInSection:(NSInteger)section {
+	if (section == 0) {
+		return BAMeshRowLayoutSpread;
+	} else if (section == 1) {
+		return BAMeshRowLayoutCenter;
+	} else if (section == 2) {
+		return BAMeshRowLayoutAlignLeft;
+	} else {
+		return BAMeshRowLayoutAlignRight;
+	}
+}
+
+- (BAMeshCellAlignment)meshView:(BAMeshView *)meshView alignmentForCellAtIndexPath:(NSIndexPath *)indexPath {
+	if (indexPath.section == 0) {
+		return BAMeshCellAlignmentCenter;
+	} else if (indexPath.section == 1) {
+		return BAMeshCellAlignmentTop;
+	} else {
+		return BAMeshCellAlignmentBottom;
+	}
+}
+
 - (UIView *)meshView:(BAMeshView *)meshView viewForHeaderInSection:(NSInteger)section {
 	UILabel *view = [[[UILabel alloc] initWithFrame:CGRectZero] autorelease];
 	view.text = [NSString stringWithFormat:@"Section Header %d", section];
