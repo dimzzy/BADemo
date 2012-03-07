@@ -159,4 +159,12 @@
 	return view;
 }
 
+- (NSIndexPath *)meshView:(BAMeshView *)meshView willSelectCellAtIndexPath:(NSIndexPath *)indexPath {
+	return indexPath;
+}
+
+- (void)meshView:(BAMeshView *)meshView didSelectCellAtIndexPath:(NSIndexPath *)indexPath {
+	NSLog(@"%d/%d", indexPath.meshSection, indexPath.meshCell);
+}
+
 @end

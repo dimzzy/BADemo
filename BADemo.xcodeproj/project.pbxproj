@@ -246,6 +246,7 @@
 		1FF5AB571467EED000BA56EF /* BASequenceControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASequenceControlViewController.h; sourceTree = "<group>"; };
 		1FF5AB581467EED000BA56EF /* BASequenceControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASequenceControlViewController.m; sourceTree = "<group>"; };
 		1FF5AB591467EED000BA56EF /* BASequenceControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BASequenceControlViewController.xib; sourceTree = "<group>"; };
+		1FFEE3531507BBA800C5A643 /* BAMeshViewCell+Owner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BAMeshViewCell+Owner.h"; sourceTree = "<group>"; };
 		1FFF233114180D320036CE48 /* BAFormButtonFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAFormButtonFieldCell.h; sourceTree = "<group>"; };
 		1FFF233214180D320036CE48 /* BAFormButtonFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAFormButtonFieldCell.m; sourceTree = "<group>"; };
 		1FFF233314180D320036CE48 /* BAFormFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAFormFieldCell.h; sourceTree = "<group>"; };
@@ -407,6 +408,7 @@
 				1F093C6A1497738A00A0F35D /* BASimpleReusableView.h */,
 				1F093C6B1497738A00A0F35D /* BASimpleReusableView.m */,
 				1F41D24414C97D0F0073E1FF /* BAMeshViewCell.h */,
+				1FFEE3531507BBA800C5A643 /* BAMeshViewCell+Owner.h */,
 				1F41D24514C97D0F0073E1FF /* BAMeshViewCell.m */,
 				1F41D23314C965570073E1FF /* BAMeshView.h */,
 				1F41D23414C965570073E1FF /* BAMeshView.m */,
