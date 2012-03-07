@@ -77,7 +77,7 @@
 }
 
 - (NSInteger)numberOfSectionsInMeshView:(BAMeshView *)meshView {
-	return 4;
+	return 9;
 }
 
 - (NSInteger)meshView:(BAMeshView *)meshView numberOfCellsInSection:(NSInteger)section {
@@ -110,29 +110,37 @@
 //- (CGFloat)meshView:(BAMeshView *)meshView heightForFooterInSection:(NSInteger)section;
 
 - (CGSize)meshView:(BAMeshView *)meshView sizeForCellAtIndexPath:(NSIndexPath *)indexPath {
-	return CGSizeMake(70, 20 + 10 * indexPath.meshCell);
+	return CGSizeMake(70, 20 + 15 * indexPath.meshCell);
 }
 
 - (BAMeshRowLayout)meshView:(BAMeshView *)meshView rowsLayoutInSection:(NSInteger)section {
-	if (section == 0) {
-		return BAMeshRowLayoutSpread;
-	} else if (section == 1) {
-		return BAMeshRowLayoutCenter;
-	} else if (section == 2) {
-		return BAMeshRowLayoutAlignLeft;
-	} else {
-		return BAMeshRowLayoutAlignRight;
+	switch (section) {
+		case 0: return BAMeshRowLayoutSpread;
+		case 1: return BAMeshRowLayoutSpreadCenter;
+		case 2: return BAMeshRowLayoutSpreadLeft;
+		case 3: return BAMeshRowLayoutSpreadRight;
+		case 4: return BAMeshRowLayoutCenter;
+		case 5: return BAMeshRowLayoutLeft;
+		case 6: return BAMeshRowLayoutRight;
+		case 7: return BAMeshRowLayoutFill;
+		case 8: return BAMeshRowLayoutSpread;
 	}
+	return BAMeshRowLayoutSpread;
 }
 
 - (BAMeshCellAlignment)meshView:(BAMeshView *)meshView alignmentForCellAtIndexPath:(NSIndexPath *)indexPath {
-	if (indexPath.section == 0) {
-		return BAMeshCellAlignmentCenter;
-	} else if (indexPath.section == 1) {
-		return BAMeshCellAlignmentTop;
-	} else {
-		return BAMeshCellAlignmentBottom;
+	switch (indexPath.section) {
+		case 0: return BAMeshCellAlignmentCenter;
+		case 1: return BAMeshCellAlignmentCenter;
+		case 2: return BAMeshCellAlignmentCenter;
+		case 3: return BAMeshCellAlignmentCenter;
+		case 4: return BAMeshCellAlignmentCenter;
+		case 5: return BAMeshCellAlignmentTop;
+		case 6: return BAMeshCellAlignmentBottom;
+		case 7: return BAMeshCellAlignmentCenter;
+		case 8: return BAMeshCellAlignmentFill;
 	}
+	return BAMeshCellAlignmentCenter;
 }
 
 - (UIView *)meshView:(BAMeshView *)meshView viewForHeaderInSection:(NSInteger)section {
