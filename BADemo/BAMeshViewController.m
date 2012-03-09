@@ -73,6 +73,7 @@
 	self.meshView.sectionHeaderHeight = 30;
 	self.meshView.sectionFooterHeight = 50;
 	self.meshView.backgroundColor = [UIColor grayColor];
+	self.meshView.contentInset = UIEdgeInsetsMake(5, 5, 5, 5);
 	[self.view addSubview:self.meshView];
 }
 
