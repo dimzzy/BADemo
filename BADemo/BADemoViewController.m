@@ -42,6 +42,7 @@
 #import "BAMeshViewController.h"
 #import "BARefreshHeaderViewController.h"
 #import "BASeparatedTableViewController.h"
+#import "BAPagerViewController.h"
 
 @implementation BADemoViewController {
 @private
@@ -77,6 +78,8 @@
 	[_controllerClasses addObject:@"BAMeshViewController"];
 	[_labels addObject:@"Sequence Control"];
 	[_controllerClasses addObject:@"BASequenceControlViewController"];
+	[_labels addObject:@"Pager"];
+	[_controllerClasses addObject:@"BAPagerViewController"];
 	[_labels addObject:@"Page Control"];
 	[_controllerClasses addObject:@"BAPageControlViewController"];
 	[_labels addObject:@"Grouped Page Control"];
