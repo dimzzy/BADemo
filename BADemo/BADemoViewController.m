@@ -28,6 +28,7 @@
 
 #import "BADemoViewController.h"
 #import "BAPageControlViewController.h"
+#import "BAGroupedPageControlViewController.h"
 #import "BAProgressViewController.h"
 #import "BAActivityViewController.h"
 #import "BAGradientViewController.h"
@@ -78,6 +79,8 @@
 	[_controllerClasses addObject:@"BASequenceControlViewController"];
 	[_labels addObject:@"Page Control"];
 	[_controllerClasses addObject:@"BAPageControlViewController"];
+	[_labels addObject:@"Grouped Page Control"];
+	[_controllerClasses addObject:@"BAGroupedPageControlViewController"];
 	[_labels addObject:@"View's Cookie"];
 	[_controllerClasses addObject:@"BAViewCookieViewController"];
 	[_labels addObject:@"Form"];

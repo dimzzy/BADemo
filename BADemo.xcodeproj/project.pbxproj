@@ -79,6 +79,9 @@
 		1FD8DEAA14D6FC8C0068D009 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FD8DEA814D6FC8C0068D009 /* Localizable.strings */; };
 		1FD8DEAD14D707030068D009 /* ba-refresh-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FD8DEAB14D707030068D009 /* ba-refresh-black.png */; };
 		1FD8DEAE14D707030068D009 /* ba-refresh-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FD8DEAC14D707030068D009 /* ba-refresh-black@2x.png */; };
+		1FE8D9B91519EB3100EA38C1 /* BAGroupedPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8D9B81519EB3100EA38C1 /* BAGroupedPageControl.m */; };
+		1FE8D9BE1519EB5500EA38C1 /* BAGroupedPageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8D9BC1519EB5500EA38C1 /* BAGroupedPageControlViewController.m */; };
+		1FE8D9BF1519EB5500EA38C1 /* BAGroupedPageControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8D9BD1519EB5500EA38C1 /* BAGroupedPageControlViewController.xib */; };
 		1FECC3AE13F2DD4700FCDBEF /* BAEditableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */; };
 		1FECC3AF13F2DD4700FCDBEF /* BARemoteImageToggleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3AD13F2DD4700FCDBEF /* BARemoteImageToggleItem.m */; };
 		1FECC3B413F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3B213F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m */; };
@@ -230,6 +233,11 @@
 		1FD8DEA914D6FC8C0068D009 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		1FD8DEAB14D707030068D009 /* ba-refresh-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ba-refresh-black.png"; sourceTree = "<group>"; };
 		1FD8DEAC14D707030068D009 /* ba-refresh-black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ba-refresh-black@2x.png"; sourceTree = "<group>"; };
+		1FE8D9B71519EB3100EA38C1 /* BAGroupedPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; path = BAGroupedPageControl.h; sourceTree = "<group>"; };
+		1FE8D9B81519EB3100EA38C1 /* BAGroupedPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAGroupedPageControl.m; sourceTree = "<group>"; };
+		1FE8D9BB1519EB5500EA38C1 /* BAGroupedPageControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = BAGroupedPageControlViewController.h; sourceTree = "<group>"; };
+		1FE8D9BC1519EB5500EA38C1 /* BAGroupedPageControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAGroupedPageControlViewController.m; sourceTree = "<group>"; };
+		1FE8D9BD1519EB5500EA38C1 /* BAGroupedPageControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAGroupedPageControlViewController.xib; sourceTree = "<group>"; };
 		1FECC3AA13F2DD4700FCDBEF /* BAEditableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAEditableCell.h; sourceTree = "<group>"; };
 		1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAEditableCell.m; sourceTree = "<group>"; };
 		1FECC3AC13F2DD4700FCDBEF /* BARemoteImageToggleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BARemoteImageToggleItem.h; sourceTree = "<group>"; };
@@ -303,6 +311,9 @@
 		1F56247713B243EA004DF703 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1FE8D9BB1519EB5500EA38C1 /* BAGroupedPageControlViewController.h */,
+				1FE8D9BC1519EB5500EA38C1 /* BAGroupedPageControlViewController.m */,
+				1FE8D9BD1519EB5500EA38C1 /* BAGroupedPageControlViewController.xib */,
 				1F7F0FE1138EED8100E62046 /* BAPageControlViewController.h */,
 				1F7F0FE2138EED8100E62046 /* BAPageControlViewController.m */,
 				1F7F0FE3138EED8100E62046 /* BAPageControlViewController.xib */,
@@ -372,6 +383,8 @@
 				1F6D31B3138E970000DEA7FE /* BARemoteImageView.m */,
 				1F6D31B0138E96FF00DEA7FE /* BAPageControl.h */,
 				1F6D31B1138E96FF00DEA7FE /* BAPageControl.m */,
+				1FE8D9B71519EB3100EA38C1 /* BAGroupedPageControl.h */,
+				1FE8D9B81519EB3100EA38C1 /* BAGroupedPageControl.m */,
 				1F8A29B7148E4A2100FDF78F /* BAProgressLayer.h */,
 				1F8A29B8148E4A2100FDF78F /* BAProgressLayer.m */,
 				1F7F0FEB138EF27F00E62046 /* BAProgressView.h */,
@@ -603,6 +616,7 @@
 				1FD8DEAD14D707030068D009 /* ba-refresh-black.png in Resources */,
 				1FD8DEAE14D707030068D009 /* ba-refresh-black@2x.png in Resources */,
 				1F114BF814DBDA180052F03E /* BASeparatedTableViewController.xib in Resources */,
+				1FE8D9BF1519EB5500EA38C1 /* BAGroupedPageControlViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +690,8 @@
 				1FC2587014EAAE4000B77722 /* BAMeshView.m in Sources */,
 				1F0BB62A14F5060100644756 /* BARemoteJSON.m in Sources */,
 				1F0BB62D14F522FF00644756 /* BARuntime.m in Sources */,
+				1FE8D9B91519EB3100EA38C1 /* BAGroupedPageControl.m in Sources */,
+				1FE8D9BE1519EB5500EA38C1 /* BAGroupedPageControlViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
