@@ -41,12 +41,12 @@
 
 	_pcl.numberOfPages = 5;
 	_pcl.pagesPerGroup = 0;
-	_pcl.alignment = BAGroupedPageControlAlignmentLeft;
+	_pcl.alignment = BAPageControlAlignmentLeft;
 	_pcl.inset = 10;
 
 	_pcr.numberOfPages = 5;
 	_pcr.pagesPerGroup = 0;
-	_pcr.alignment = BAGroupedPageControlAlignmentRight;
+	_pcr.alignment = BAPageControlAlignmentRight;
 	_pcr.inset = 10;
 	
 	_pc1.numberOfPages = 15;
