@@ -82,6 +82,8 @@
 	[_controllerClasses addObject:@"BAPagerViewController"];
 	[_labels addObject:@"Page Control"];
 	[_controllerClasses addObject:@"BAPageControlViewController"];
+	[_labels addObject:@"Custom Page Control"];
+	[_controllerClasses addObject:@"BACustomPageControlViewController"];
 	[_labels addObject:@"Grouped Page Control"];
 	[_controllerClasses addObject:@"BAGroupedPageControlViewController"];
 	[_labels addObject:@"View's Cookie"];

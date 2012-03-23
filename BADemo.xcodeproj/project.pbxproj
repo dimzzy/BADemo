@@ -28,6 +28,8 @@
 		1F56247013B243A2004DF703 /* BAGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56246E13B243A2004DF703 /* BAGradientView.m */; };
 		1F56247513B243DF004DF703 /* BAGradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56247313B243DF004DF703 /* BAGradientViewController.m */; };
 		1F56247613B243DF004DF703 /* BAGradientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F56247413B243DF004DF703 /* BAGradientViewController.xib */; };
+		1F6841EB151C6D9200ADEC62 /* BACustomPageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6841E9151C6D9200ADEC62 /* BACustomPageControlViewController.m */; };
+		1F6841EC151C6D9200ADEC62 /* BACustomPageControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6841EA151C6D9200ADEC62 /* BACustomPageControlViewController.xib */; };
 		1F6C8F34139E730100DA3270 /* BAActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C8F32139E730100DA3270 /* BAActivityViewController.m */; };
 		1F6C8F35139E730100DA3270 /* BAActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6C8F33139E730100DA3270 /* BAActivityViewController.xib */; };
 		1F6C8F39139E731900DA3270 /* BAActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C8F38139E731900DA3270 /* BAActivityView.m */; };
@@ -35,6 +37,8 @@
 		1F6D31AE138E959600DEA7FE /* BAXMLParserBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6D31AC138E959600DEA7FE /* BAXMLParserBase.m */; };
 		1F6D31B4138E970000DEA7FE /* BAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6D31B1138E96FF00DEA7FE /* BAPageControl.m */; };
 		1F6D31B5138E970000DEA7FE /* BARemoteImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6D31B3138E970000DEA7FE /* BARemoteImageView.m */; };
+		1F726495151C750600CC51B9 /* dot-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F726493151C750600CC51B9 /* dot-active.png */; };
+		1F726496151C750600CC51B9 /* dot-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F726494151C750600CC51B9 /* dot-inactive.png */; };
 		1F75710A13A239450015AA92 /* form-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F75710913A239450015AA92 /* form-button.png */; };
 		1F7BE43D14C04B09009664D6 /* BADaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7BE43B14C04B09009664D6 /* BADaysViewController.m */; };
 		1F7BE43E14C04B09009664D6 /* BADaysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F7BE43C14C04B09009664D6 /* BADaysViewController.xib */; };
@@ -84,6 +88,7 @@
 		1FE8D9BF1519EB5500EA38C1 /* BAGroupedPageControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8D9BD1519EB5500EA38C1 /* BAGroupedPageControlViewController.xib */; };
 		1FE8D9EB151A044F00EA38C1 /* BAPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8D9E9151A044F00EA38C1 /* BAPagerViewController.m */; };
 		1FE8D9EC151A044F00EA38C1 /* BAPagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8D9EA151A044F00EA38C1 /* BAPagerViewController.xib */; };
+		1FE8D9F0151B684200EA38C1 /* BACustomPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8D9EF151B684200EA38C1 /* BACustomPageControl.m */; };
 		1FECC3AE13F2DD4700FCDBEF /* BAEditableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */; };
 		1FECC3AF13F2DD4700FCDBEF /* BARemoteImageToggleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3AD13F2DD4700FCDBEF /* BARemoteImageToggleItem.m */; };
 		1FECC3B413F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECC3B213F2DD9D00FCDBEF /* BASimpleEditableTableViewController.m */; };
@@ -146,6 +151,9 @@
 		1F56247213B243DF004DF703 /* BAGradientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAGradientViewController.h; sourceTree = "<group>"; };
 		1F56247313B243DF004DF703 /* BAGradientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAGradientViewController.m; sourceTree = "<group>"; };
 		1F56247413B243DF004DF703 /* BAGradientViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAGradientViewController.xib; sourceTree = "<group>"; };
+		1F6841E8151C6D9200ADEC62 /* BACustomPageControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACustomPageControlViewController.h; sourceTree = "<group>"; };
+		1F6841E9151C6D9200ADEC62 /* BACustomPageControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACustomPageControlViewController.m; sourceTree = "<group>"; };
+		1F6841EA151C6D9200ADEC62 /* BACustomPageControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BACustomPageControlViewController.xib; sourceTree = "<group>"; };
 		1F6C8F31139E730100DA3270 /* BAActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAActivityViewController.h; sourceTree = "<group>"; };
 		1F6C8F32139E730100DA3270 /* BAActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAActivityViewController.m; sourceTree = "<group>"; };
 		1F6C8F33139E730100DA3270 /* BAActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAActivityViewController.xib; sourceTree = "<group>"; };
@@ -159,6 +167,8 @@
 		1F6D31B1138E96FF00DEA7FE /* BAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPageControl.m; sourceTree = "<group>"; };
 		1F6D31B2138E96FF00DEA7FE /* BARemoteImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BARemoteImageView.h; sourceTree = "<group>"; };
 		1F6D31B3138E970000DEA7FE /* BARemoteImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BARemoteImageView.m; sourceTree = "<group>"; };
+		1F726493151C750600CC51B9 /* dot-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dot-active.png"; sourceTree = "<group>"; };
+		1F726494151C750600CC51B9 /* dot-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dot-inactive.png"; sourceTree = "<group>"; };
 		1F75710913A239450015AA92 /* form-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "form-button.png"; sourceTree = "<group>"; };
 		1F7BE43A14C04B09009664D6 /* BADaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADaysViewController.h; sourceTree = "<group>"; };
 		1F7BE43B14C04B09009664D6 /* BADaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BADaysViewController.m; sourceTree = "<group>"; };
@@ -243,6 +253,8 @@
 		1FE8D9E8151A044F00EA38C1 /* BAPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPagerViewController.h; sourceTree = "<group>"; };
 		1FE8D9E9151A044F00EA38C1 /* BAPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPagerViewController.m; sourceTree = "<group>"; };
 		1FE8D9EA151A044F00EA38C1 /* BAPagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAPagerViewController.xib; sourceTree = "<group>"; };
+		1FE8D9EE151B684200EA38C1 /* BACustomPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACustomPageControl.h; sourceTree = "<group>"; };
+		1FE8D9EF151B684200EA38C1 /* BACustomPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACustomPageControl.m; sourceTree = "<group>"; };
 		1FECC3AA13F2DD4700FCDBEF /* BAEditableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAEditableCell.h; sourceTree = "<group>"; };
 		1FECC3AB13F2DD4700FCDBEF /* BAEditableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAEditableCell.m; sourceTree = "<group>"; };
 		1FECC3AC13F2DD4700FCDBEF /* BARemoteImageToggleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BARemoteImageToggleItem.h; sourceTree = "<group>"; };
@@ -304,6 +316,8 @@
 				1F4B38DA138E704D003FE58C /* BADemoViewController.h */,
 				1F4B38DB138E704D003FE58C /* BADemoViewController.m */,
 				1F4B38DD138E704D003FE58C /* BADemo-Prefix.pch */,
+				1F726493151C750600CC51B9 /* dot-active.png */,
+				1F726494151C750600CC51B9 /* dot-inactive.png */,
 				1F75710913A239450015AA92 /* form-button.png */,
 				1F4B38DE138E704D003FE58C /* InfoPlist.strings */,
 				1F4B38E0138E704D003FE58C /* Info.plist */,
@@ -316,12 +330,15 @@
 		1F56247713B243EA004DF703 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				1FE8D9BB1519EB5500EA38C1 /* BAGroupedPageControlViewController.h */,
-				1FE8D9BC1519EB5500EA38C1 /* BAGroupedPageControlViewController.m */,
-				1FE8D9BD1519EB5500EA38C1 /* BAGroupedPageControlViewController.xib */,
 				1F7F0FE1138EED8100E62046 /* BAPageControlViewController.h */,
 				1F7F0FE2138EED8100E62046 /* BAPageControlViewController.m */,
 				1F7F0FE3138EED8100E62046 /* BAPageControlViewController.xib */,
+				1F6841E8151C6D9200ADEC62 /* BACustomPageControlViewController.h */,
+				1F6841E9151C6D9200ADEC62 /* BACustomPageControlViewController.m */,
+				1F6841EA151C6D9200ADEC62 /* BACustomPageControlViewController.xib */,
+				1FE8D9BB1519EB5500EA38C1 /* BAGroupedPageControlViewController.h */,
+				1FE8D9BC1519EB5500EA38C1 /* BAGroupedPageControlViewController.m */,
+				1FE8D9BD1519EB5500EA38C1 /* BAGroupedPageControlViewController.xib */,
 				1F7F0FF0138EF50500E62046 /* BAProgressViewController.h */,
 				1F7F0FF1138EF50500E62046 /* BAProgressViewController.m */,
 				1F7F0FF2138EF50500E62046 /* BAProgressViewController.xib */,
@@ -393,6 +410,8 @@
 				1F6D31B1138E96FF00DEA7FE /* BAPageControl.m */,
 				1FE8D9B71519EB3100EA38C1 /* BAGroupedPageControl.h */,
 				1FE8D9B81519EB3100EA38C1 /* BAGroupedPageControl.m */,
+				1FE8D9EE151B684200EA38C1 /* BACustomPageControl.h */,
+				1FE8D9EF151B684200EA38C1 /* BACustomPageControl.m */,
 				1F8A29B7148E4A2100FDF78F /* BAProgressLayer.h */,
 				1F8A29B8148E4A2100FDF78F /* BAProgressLayer.m */,
 				1F7F0FEB138EF27F00E62046 /* BAProgressView.h */,
@@ -626,6 +645,9 @@
 				1F114BF814DBDA180052F03E /* BASeparatedTableViewController.xib in Resources */,
 				1FE8D9BF1519EB5500EA38C1 /* BAGroupedPageControlViewController.xib in Resources */,
 				1FE8D9EC151A044F00EA38C1 /* BAPagerViewController.xib in Resources */,
+				1F6841EC151C6D9200ADEC62 /* BACustomPageControlViewController.xib in Resources */,
+				1F726495151C750600CC51B9 /* dot-active.png in Resources */,
+				1F726496151C750600CC51B9 /* dot-inactive.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,6 +724,8 @@
 				1FE8D9B91519EB3100EA38C1 /* BAGroupedPageControl.m in Sources */,
 				1FE8D9BE1519EB5500EA38C1 /* BAGroupedPageControlViewController.m in Sources */,
 				1FE8D9EB151A044F00EA38C1 /* BAPagerViewController.m in Sources */,
+				1FE8D9F0151B684200EA38C1 /* BACustomPageControl.m in Sources */,
+				1F6841EB151C6D9200ADEC62 /* BACustomPageControlViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
