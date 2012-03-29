@@ -74,6 +74,14 @@
 	self.meshView.sectionFooterHeight = 50;
 	self.meshView.backgroundColor = [UIColor grayColor];
 	self.meshView.contentInset = UIEdgeInsetsMake(5, 5, 5, 5);
+	UILabel *headerLabel = [[[UILabel alloc] init] autorelease];
+	headerLabel.font = [UIFont systemFontOfSize:20];
+	headerLabel.text = @"Mesh Header";
+	self.meshView.meshHeaderView = headerLabel;
+	UILabel *footerLabel = [[[UILabel alloc] init] autorelease];
+	footerLabel.font = [UIFont boldSystemFontOfSize:10];
+	footerLabel.text = @"Mesh Footer";
+	self.meshView.meshFooterView = footerLabel;
 	[self.view addSubview:self.meshView];
 }
 
