@@ -67,6 +67,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	self.meshView = [[[BAMeshView alloc] initWithFrame:self.view.bounds] autorelease];
+	self.meshView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	self.meshView.dataSource = self;
 	self.meshView.delegate = self;
 	self.meshView.cellSize = CGSizeMake(80, 30);
@@ -174,6 +175,10 @@
 
 - (void)meshView:(BAMeshView *)meshView didSelectCellAtIndexPath:(NSIndexPath *)indexPath {
 	NSLog(@"%d/%d", indexPath.meshSection, indexPath.meshCell);
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	return YES;
 }
 
 @end
