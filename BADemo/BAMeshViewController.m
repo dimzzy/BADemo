@@ -64,8 +64,35 @@
     [super dealloc];
 }
 
+- (void)dumpSubviews:(UIView *)view withOffset:(NSString *)offset {
+	NSMutableString *s = [NSMutableString string];
+	[s appendString:offset];
+	[s appendString:NSStringFromClass([view class])];
+	[s appendString:@" : "];
+	//	[s appendString:NSStringFromCGRect(view.frame)];
+	[s appendString:NSStringFromCGPoint(view.frame.origin)];
+	NSLog(@"%@", s);
+	for (UIView *subview in view.subviews) {
+		[self dumpSubviews:subview withOffset:[offset stringByAppendingString:@"    "]];
+	}
+}
+
+- (void)dumpContentViews1 {
+	[self dumpSubviews:self.meshView withOffset:@""];
+	NSLog(@"total: %d", [self.meshView.subviews count]);
+}
+
+- (void)dumpContentViews {
+	[self.meshView reloadData];
+	[self performSelector:@selector(dumpContentViews1) withObject:nil afterDelay:2];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+//	self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Dump"
+//																			   style:UIBarButtonItemStylePlain
+//																			  target:self
+//																			  action:@selector(dumpContentViews)] autorelease];
 	self.meshView = [[[BAMeshView alloc] initWithFrame:self.view.bounds] autorelease];
 	self.meshView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	self.meshView.dataSource = self;
@@ -87,7 +114,7 @@
 }
 
 - (NSInteger)numberOfSectionsInMeshView:(BAMeshView *)meshView {
-	return 9;
+	return 1;
 }
 
 - (NSInteger)meshView:(BAMeshView *)meshView numberOfCellsInSection:(NSInteger)section {
