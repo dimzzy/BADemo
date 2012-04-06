@@ -176,13 +176,13 @@
 //- (CGFloat)meshView:(BAMeshView *)meshView heightForHeaderInSection:(NSInteger)section;
 //- (CGFloat)meshView:(BAMeshView *)meshView heightForFooterInSection:(NSInteger)section;
 
-//- (CGSize)meshView:(BAMeshView *)meshView sizeForCellAtIndexPath:(NSIndexPath *)indexPath {
-//	return CGSizeMake(70, 20 + 15 * indexPath.meshCell);
-//}
-
 - (BAMeshRowLayout)meshView:(BAMeshView *)meshView rowsLayoutInSection:(NSInteger)section {
 	return BAMeshRowLayoutSpreadLeft;
 }
+
+//- (UIEdgeInsets)meshView:(BAMeshView *)meshView rowsInsetsInSection:(NSInteger)section {
+//	return UIEdgeInsetsMake(0, 10, 0, 30);
+//}
 
 - (BAMeshCellAlignment)meshView:(BAMeshView *)meshView alignmentForCellAtIndexPath:(NSIndexPath *)indexPath {
 	return BAMeshCellAlignmentCenter;
