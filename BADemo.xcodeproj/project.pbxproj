@@ -16,6 +16,9 @@
 		1F114BF714DBDA180052F03E /* BASeparatedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F114BF514DBDA180052F03E /* BASeparatedTableViewController.m */; };
 		1F114BF814DBDA180052F03E /* BASeparatedTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F114BF614DBDA180052F03E /* BASeparatedTableViewController.xib */; };
 		1F193076147001B10090774A /* BASeparatedTableProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F193075147001B10090774A /* BASeparatedTableProvider.m */; };
+		1F26943F152ED738004A9AA9 /* BADecoratedMeshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26943D152ED738004A9AA9 /* BADecoratedMeshViewController.m */; };
+		1F269440152ED738004A9AA9 /* BADecoratedMeshViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F26943E152ED738004A9AA9 /* BADecoratedMeshViewController.xib */; };
+		1F269443152EE4EC004A9AA9 /* mesh-decoration.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F269442152EE4EC004A9AA9 /* mesh-decoration.png */; };
 		1F2C5F3F1473D5EB00FBB1E5 /* BANetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C5F3E1473D5EB00FBB1E5 /* BANetwork.m */; };
 		1F3CD8A114CE16E5003872C9 /* BAScrollViewProxyDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3CD8A014CE16E5003872C9 /* BAScrollViewProxyDelegate.m */; };
 		1F41D24614C97D0F0073E1FF /* BAMeshViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41D24514C97D0F0073E1FF /* BAMeshViewCell.m */; };
@@ -127,6 +130,10 @@
 		1F114BF614DBDA180052F03E /* BASeparatedTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BASeparatedTableViewController.xib; sourceTree = "<group>"; };
 		1F193074147001B10090774A /* BASeparatedTableProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASeparatedTableProvider.h; sourceTree = "<group>"; };
 		1F193075147001B10090774A /* BASeparatedTableProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASeparatedTableProvider.m; sourceTree = "<group>"; };
+		1F26943C152ED737004A9AA9 /* BADecoratedMeshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADecoratedMeshViewController.h; sourceTree = "<group>"; };
+		1F26943D152ED738004A9AA9 /* BADecoratedMeshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BADecoratedMeshViewController.m; sourceTree = "<group>"; };
+		1F26943E152ED738004A9AA9 /* BADecoratedMeshViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BADecoratedMeshViewController.xib; sourceTree = "<group>"; };
+		1F269442152EE4EC004A9AA9 /* mesh-decoration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesh-decoration.png"; sourceTree = "<group>"; };
 		1F2C5F3D1473D5EB00FBB1E5 /* BANetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetwork.h; sourceTree = "<group>"; };
 		1F2C5F3E1473D5EB00FBB1E5 /* BANetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANetwork.m; sourceTree = "<group>"; };
 		1F3CD89F14CE16E5003872C9 /* BAScrollViewProxyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAScrollViewProxyDelegate.h; sourceTree = "<group>"; };
@@ -318,6 +325,7 @@
 				1F4B38DD138E704D003FE58C /* BADemo-Prefix.pch */,
 				1F726493151C750600CC51B9 /* dot-active.png */,
 				1F726494151C750600CC51B9 /* dot-inactive.png */,
+				1F269442152EE4EC004A9AA9 /* mesh-decoration.png */,
 				1F75710913A239450015AA92 /* form-button.png */,
 				1F4B38DE138E704D003FE58C /* InfoPlist.strings */,
 				1F4B38E0138E704D003FE58C /* Info.plist */,
@@ -369,6 +377,9 @@
 				1F0C62A614CD7E9A005FE1BB /* BAMeshViewController.h */,
 				1F0C62A714CD7E9A005FE1BB /* BAMeshViewController.m */,
 				1F0C62A814CD7E9A005FE1BB /* BAMeshViewController.xib */,
+				1F26943C152ED737004A9AA9 /* BADecoratedMeshViewController.h */,
+				1F26943D152ED738004A9AA9 /* BADecoratedMeshViewController.m */,
+				1F26943E152ED738004A9AA9 /* BADecoratedMeshViewController.xib */,
 				1FD8DEA214D6EBBF0068D009 /* BARefreshHeaderViewController.h */,
 				1FD8DEA314D6EBBF0068D009 /* BARefreshHeaderViewController.m */,
 				1FD8DEA414D6EBBF0068D009 /* BARefreshHeaderViewController.xib */,
@@ -648,6 +659,8 @@
 				1F6841EC151C6D9200ADEC62 /* BACustomPageControlViewController.xib in Resources */,
 				1F726495151C750600CC51B9 /* dot-active.png in Resources */,
 				1F726496151C750600CC51B9 /* dot-inactive.png in Resources */,
+				1F269440152ED738004A9AA9 /* BADecoratedMeshViewController.xib in Resources */,
+				1F269443152EE4EC004A9AA9 /* mesh-decoration.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,6 +739,7 @@
 				1FE8D9EB151A044F00EA38C1 /* BAPagerViewController.m in Sources */,
 				1FE8D9F0151B684200EA38C1 /* BACustomPageControl.m in Sources */,
 				1F6841EB151C6D9200ADEC62 /* BACustomPageControlViewController.m in Sources */,
+				1F26943F152ED738004A9AA9 /* BADecoratedMeshViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

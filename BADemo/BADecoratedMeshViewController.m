@@ -26,41 +26,33 @@
  or implied, of Dmitry Stadnik.
  */
 
-#import "BAMeshViewController.h"
+#import "BADecoratedMeshViewController.h"
 
-@interface BAMeshTestView : UIView
-
-@property int sec, cell;
+@interface BADecoratedMeshTestView : UIView
 
 @end
 
 
-@implementation BAMeshTestView
-
-@synthesize sec, cell;
+@implementation BADecoratedMeshTestView
 
 - (void)drawRect:(CGRect)rect {
 	[super drawRect:rect];
 	[[UIColor blackColor] set];
 	[[UIBezierPath bezierPathWithOvalInRect:CGRectInset(self.bounds, 0.5, 0.5)] stroke];
-	NSString *s = [NSString stringWithFormat:@"%d:%d", self.sec, self.cell];
-	UIFont *font = [UIFont systemFontOfSize:13];
-	CGSize ss = [s sizeWithFont:font];
-	CGRect sr = CGRectMake((self.bounds.size.width - ss.width) / 2,
-						   (self.bounds.size.height - ss.height) / 2,
-						   ss.width, ss.height);
-	[s drawInRect:sr withFont:font];
 }
 
 @end
 
-
-@implementation BAMeshViewController
+@implementation BADecoratedMeshViewController {
+@private
+	NSMutableDictionary *_meshDecorationViews; // { section index:NSNumber -> decoration view:UIView }
+}
 
 @synthesize meshView = _meshView;
 
 - (void)dealloc {
 	self.meshView = nil;
+	[_meshDecorationViews release];
     [super dealloc];
 }
 
@@ -87,6 +79,45 @@
 	[self performSelector:@selector(dumpContentViews1) withObject:nil afterDelay:2];
 }
 
+- (UIView *)makeMeshDecorationView {
+	UIImage *image = [UIImage imageNamed:@"mesh-decoration.png"];
+	UIImageView *view = [[[UIImageView alloc] initWithImage:image] autorelease];
+	return view;
+}
+
+- (void)updateMeshDecorationViews {
+	if (!_meshDecorationViews) {
+		_meshDecorationViews = [[NSMutableDictionary alloc] init];
+	}
+	NSIndexSet *visibleSections = [self.meshView indexesOfVisibleSections];
+	[[_meshDecorationViews allKeys] enumerateObjectsUsingBlock:^(id sectionNumber, NSUInteger idx, BOOL *stop) {
+		NSInteger section = [sectionNumber intValue];
+		if (![visibleSections containsIndex:section]) {
+			UIView *decorationView = [_meshDecorationViews objectForKey:sectionNumber];
+			[decorationView removeFromSuperview];
+			[_meshDecorationViews removeObjectForKey:sectionNumber];
+		}
+	}];
+	[visibleSections enumerateIndexesUsingBlock:^(NSUInteger section, BOOL *stop) {
+		NSNumber *sectionNumber = [NSNumber numberWithInt:section];
+		UIView *decorationView = [_meshDecorationViews objectForKey:sectionNumber];
+		if (!decorationView) {
+			decorationView = [self makeMeshDecorationView];
+			[self.view insertSubview:decorationView aboveSubview:self.meshView];
+			[_meshDecorationViews setObject:decorationView forKey:sectionNumber];
+		}
+		CGRect sectionRect = [self.meshView rectForSection:section];
+		CGRect decorationFrame = decorationView.frame;
+		decorationFrame.origin.x = sectionRect.origin.x + self.meshView.contentInset.left;
+		decorationFrame.origin.y = sectionRect.origin.y - self.meshView.contentOffset.y;
+		decorationView.frame = decorationFrame;
+	}];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+	[self updateMeshDecorationViews];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 //	self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Dump"
@@ -95,26 +126,27 @@
 //																			  action:@selector(dumpContentViews)] autorelease];
 	self.meshView = [[[BAMeshView alloc] initWithFrame:self.view.bounds] autorelease];
 	self.meshView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-	self.meshView.dataSource = self;
-	self.meshView.delegate = self;
-	self.meshView.cellSize = CGSizeMake(80, 30);
-	self.meshView.sectionHeaderHeight = 30;
+	self.meshView.cellSize = CGSizeMake(40, 40);
+	self.meshView.sectionHeaderHeight = 50;
 	self.meshView.sectionFooterHeight = 50;
 	self.meshView.backgroundColor = [UIColor grayColor];
-	self.meshView.contentInset = UIEdgeInsetsMake(5, 5, 5, 5);
 	UILabel *headerLabel = [[[UILabel alloc] init] autorelease];
-	headerLabel.font = [UIFont systemFontOfSize:20];
+	headerLabel.font = [UIFont boldSystemFontOfSize:15];
 	headerLabel.text = @"Mesh Header";
 	self.meshView.meshHeaderView = headerLabel;
 	UILabel *footerLabel = [[[UILabel alloc] init] autorelease];
-	footerLabel.font = [UIFont boldSystemFontOfSize:10];
+	footerLabel.font = [UIFont boldSystemFontOfSize:15];
 	footerLabel.text = @"Mesh Footer";
 	self.meshView.meshFooterView = footerLabel;
+	self.meshView.dataSource = self;
+	self.meshView.delegate = self;
 	[self.view addSubview:self.meshView];
+	self.meshView.contentInset = UIEdgeInsetsMake(5, 5, 5, 5);
+	[self updateMeshDecorationViews];
 }
 
 - (NSInteger)numberOfSectionsInMeshView:(BAMeshView *)meshView {
-	return 9;
+	return 5;
 }
 
 - (NSInteger)meshView:(BAMeshView *)meshView numberOfCellsInSection:(NSInteger)section {
@@ -122,13 +154,13 @@
 }
 
 - (BAMeshViewCell *)meshView:(BAMeshView *)meshView cellAtIndexPath:(NSIndexPath *)indexPath {
-	CGRect f = CGRectMake(0, 0, 100, 50);
-	BAMeshTestView *tv = nil;
+	CGRect f = CGRectMake(0, 0, 80, 80);
+	BADecoratedMeshTestView *tv = nil;
 	BAMeshViewCell *cell = [meshView dequeueReusableCellWithIdentifier:@"ACell"];
 	if (!cell) {
 		cell = [[[BAMeshViewCell alloc] initWithReuseIdentifier:@"ACell"] autorelease];
 		cell.frame = f;
-		tv = [[[BAMeshTestView alloc] initWithFrame:f] autorelease];
+		tv = [[[BADecoratedMeshTestView alloc] initWithFrame:f] autorelease];
 		tv.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 		tv.contentMode = UIViewContentModeRedraw;
 		[cell.contentView addSubview:tv];
@@ -136,8 +168,6 @@
 		tv = [cell.contentView.subviews objectAtIndex:0];
 	}
 	cell.frame = f;
-	tv.sec = indexPath.meshSection;
-	tv.cell = indexPath.meshCell;
 	[tv setNeedsDisplay];
 	tv.backgroundColor = indexPath.meshSection % 2 ? [UIColor yellowColor] : [UIColor orangeColor];
 	return cell;
@@ -146,52 +176,32 @@
 //- (CGFloat)meshView:(BAMeshView *)meshView heightForHeaderInSection:(NSInteger)section;
 //- (CGFloat)meshView:(BAMeshView *)meshView heightForFooterInSection:(NSInteger)section;
 
-- (CGSize)meshView:(BAMeshView *)meshView sizeForCellAtIndexPath:(NSIndexPath *)indexPath {
-	return CGSizeMake(70, 20 + 15 * indexPath.meshCell);
-}
+//- (CGSize)meshView:(BAMeshView *)meshView sizeForCellAtIndexPath:(NSIndexPath *)indexPath {
+//	return CGSizeMake(70, 20 + 15 * indexPath.meshCell);
+//}
 
 - (BAMeshRowLayout)meshView:(BAMeshView *)meshView rowsLayoutInSection:(NSInteger)section {
-	switch (section) {
-		case 0: return BAMeshRowLayoutSpread;
-		case 1: return BAMeshRowLayoutSpreadCenter;
-		case 2: return BAMeshRowLayoutSpreadLeft;
-		case 3: return BAMeshRowLayoutSpreadRight;
-		case 4: return BAMeshRowLayoutCenter;
-		case 5: return BAMeshRowLayoutLeft;
-		case 6: return BAMeshRowLayoutRight;
-		case 7: return BAMeshRowLayoutFill;
-		case 8: return BAMeshRowLayoutSpread;
-	}
-	return BAMeshRowLayoutSpread;
+	return BAMeshRowLayoutSpreadLeft;
 }
 
 - (BAMeshCellAlignment)meshView:(BAMeshView *)meshView alignmentForCellAtIndexPath:(NSIndexPath *)indexPath {
-	switch (indexPath.section) {
-		case 0: return BAMeshCellAlignmentCenter;
-		case 1: return BAMeshCellAlignmentCenter;
-		case 2: return BAMeshCellAlignmentCenter;
-		case 3: return BAMeshCellAlignmentCenter;
-		case 4: return BAMeshCellAlignmentCenter;
-		case 5: return BAMeshCellAlignmentTop;
-		case 6: return BAMeshCellAlignmentBottom;
-		case 7: return BAMeshCellAlignmentCenter;
-		case 8: return BAMeshCellAlignmentFill;
-	}
 	return BAMeshCellAlignmentCenter;
 }
 
 - (UIView *)meshView:(BAMeshView *)meshView viewForHeaderInSection:(NSInteger)section {
 	UILabel *view = [[[UILabel alloc] initWithFrame:CGRectZero] autorelease];
+	view.textAlignment = UITextAlignmentRight;
 	view.text = [NSString stringWithFormat:@"Section Header %d", section];
-	view.font = [UIFont systemFontOfSize:13];
+	view.font = [UIFont boldSystemFontOfSize:15];
 	view.backgroundColor = [UIColor magentaColor];
 	return view;
 }
 
 - (UIView *)meshView:(BAMeshView *)meshView viewForFooterInSection:(NSInteger)section {
 	UILabel *view = [[[UILabel alloc] initWithFrame:CGRectZero] autorelease];
+	view.textAlignment = UITextAlignmentRight;
 	view.text = [NSString stringWithFormat:@"Section Footer %d", section];
-	view.font = [UIFont boldSystemFontOfSize:13];
+	view.font = [UIFont boldSystemFontOfSize:15];
 	view.backgroundColor = [UIColor greenColor];
 	return view;
 }

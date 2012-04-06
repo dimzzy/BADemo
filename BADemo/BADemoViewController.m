@@ -40,6 +40,7 @@
 #import "BADaysViewController.h"
 #import "BADataLoaderViewController.h"
 #import "BAMeshViewController.h"
+#import "BADecoratedMeshViewController.h"
 #import "BARefreshHeaderViewController.h"
 #import "BASeparatedTableViewController.h"
 #import "BAPagerViewController.h"
@@ -76,6 +77,8 @@
 	[_controllerClasses addObject:@"BAGradientViewController"];
 	[_labels addObject:@"Mesh View"];
 	[_controllerClasses addObject:@"BAMeshViewController"];
+	[_labels addObject:@"Decorated Mesh View"];
+	[_controllerClasses addObject:@"BADecoratedMeshViewController"];
 	[_labels addObject:@"Sequence Control"];
 	[_controllerClasses addObject:@"BASequenceControlViewController"];
 	[_labels addObject:@"Pager"];
