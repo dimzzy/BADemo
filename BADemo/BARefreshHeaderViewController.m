@@ -57,6 +57,21 @@
 	}
 }
 
+- (void)reload {
+	_loading = YES;
+	[NSTimer scheduledTimerWithTimeInterval:3
+									 target:self
+								   selector:@selector(contentDidChange:)
+								   userInfo:nil
+									repeats:NO];
+}
+
+- (void)extReload {
+	[_refreshHeaderView dataSourceDidStartLoading:self.tableView];
+	[self.tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
+	[self reload];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 	CGRect headerFrame = CGRectMake(0,
@@ -72,18 +87,16 @@
 	_refreshHeaderView.arrowImageLayer.contents = (id)[UIImage imageNamed:@"ba-refresh-black.png"].CGImage;
 	_refreshHeaderView.activityView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
 	[_refreshHeaderView refreshLastUpdatedDate];
+	self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+																							target:self
+																							action:@selector(extReload)] autorelease];
 }
 
 #pragma mark -
 #pragma mark Refresh Header Callbacks
 
 - (void)refreshHeaderDidTriggerRefresh:(BARefreshHeaderView *)view {
-	_loading = YES;
-	[NSTimer scheduledTimerWithTimeInterval:3
-									 target:self
-								   selector:@selector(contentDidChange:)
-								   userInfo:nil
-									repeats:NO];
+	[self reload];
 }
 
 - (BOOL)refreshHeaderDataSourceLoading:(BARefreshHeaderView *)view {
