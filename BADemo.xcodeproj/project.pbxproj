@@ -634,7 +634,7 @@
 		1FC7B7E0138E592800900EA2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = BaseAppKit;
 			};
 			buildConfigurationList = 1FC7B7E3138E592800900EA2 /* Build configuration list for PBXProject "BADemo" */;
