@@ -1,0 +1,11 @@
+{
+	"game" : "over",
+	"score" : 10,
+	"player" : {
+		"name" : "Asterix",
+		"kills" : ["Enemy A", "Enemy B", "Enemy C", "Enemy D"]
+	},
+	"status" : "Once upon a time there was a great hero which lived a decent life.",
+	"description of the game using his own words" : "come get some",
+	"friends" : ["Friend A", "Friend B", "Friend C"]
+}

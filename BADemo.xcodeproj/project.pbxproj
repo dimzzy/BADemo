@@ -65,6 +65,12 @@
 		1F8B257213F04691005FA6E9 /* UIView+BACookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B257113F04691005FA6E9 /* UIView+BACookie.m */; };
 		1F8B257713F048CB005FA6E9 /* BAViewCookieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B257513F048CB005FA6E9 /* BAViewCookieViewController.m */; };
 		1F8B257813F048CB005FA6E9 /* BAViewCookieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8B257613F048CB005FA6E9 /* BAViewCookieViewController.xib */; };
+		1F8C534C15E3AF4B0085C04E /* BAJSONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C534B15E3AF4B0085C04E /* BAJSONViewController.m */; };
+		1F8C534F15E3D5350085C04E /* test1.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F8C534E15E3D5350085C04E /* test1.json */; };
+		1F8C535115E3D6BB0085C04E /* test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F8C535015E3D6BB0085C04E /* test2.json */; };
+		1F8C535515E3D7360085C04E /* BAJSONTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C535315E3D7360085C04E /* BAJSONTestViewController.m */; };
+		1F8C535615E3D7360085C04E /* BAJSONTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8C535415E3D7360085C04E /* BAJSONTestViewController.xib */; };
+		1F8C535915E3DAB60085C04E /* BATextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C535815E3DAB60085C04E /* BATextViewController.m */; };
 		1F8E7F18139FA49600D99164 /* BAFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E7F17139FA49600D99164 /* BAFormViewController.m */; };
 		1F8E7F1A139FA4BA00D99164 /* BAFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8E7F19139FA4BA00D99164 /* BAFormViewController.xib */; };
 		1F8E7F21139FC2D500D99164 /* BAKeyboardTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E7F20139FC2D500D99164 /* BAKeyboardTracker.m */; };
@@ -219,6 +225,15 @@
 		1F8B257413F048CB005FA6E9 /* BAViewCookieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAViewCookieViewController.h; sourceTree = "<group>"; };
 		1F8B257513F048CB005FA6E9 /* BAViewCookieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAViewCookieViewController.m; sourceTree = "<group>"; };
 		1F8B257613F048CB005FA6E9 /* BAViewCookieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAViewCookieViewController.xib; sourceTree = "<group>"; };
+		1F8C534A15E3AF4B0085C04E /* BAJSONViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAJSONViewController.h; sourceTree = "<group>"; };
+		1F8C534B15E3AF4B0085C04E /* BAJSONViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAJSONViewController.m; sourceTree = "<group>"; };
+		1F8C534E15E3D5350085C04E /* test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1.json; sourceTree = "<group>"; };
+		1F8C535015E3D6BB0085C04E /* test2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test2.json; sourceTree = "<group>"; };
+		1F8C535215E3D7360085C04E /* BAJSONTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAJSONTestViewController.h; sourceTree = "<group>"; };
+		1F8C535315E3D7360085C04E /* BAJSONTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAJSONTestViewController.m; sourceTree = "<group>"; };
+		1F8C535415E3D7360085C04E /* BAJSONTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAJSONTestViewController.xib; sourceTree = "<group>"; };
+		1F8C535715E3DAB60085C04E /* BATextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATextViewController.h; sourceTree = "<group>"; };
+		1F8C535815E3DAB60085C04E /* BATextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATextViewController.m; sourceTree = "<group>"; };
 		1F8E7F16139FA49600D99164 /* BAFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAFormViewController.h; sourceTree = "<group>"; };
 		1F8E7F17139FA49600D99164 /* BAFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAFormViewController.m; sourceTree = "<group>"; };
 		1F8E7F19139FA4BA00D99164 /* BAFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAFormViewController.xib; sourceTree = "<group>"; };
@@ -331,6 +346,8 @@
 				1F4B38E0138E704D003FE58C /* Info.plist */,
 				1FD8DEA814D6FC8C0068D009 /* Localizable.strings */,
 				1F4B38E1138E704D003FE58C /* main.m */,
+				1F8C534E15E3D5350085C04E /* test1.json */,
+				1F8C535015E3D6BB0085C04E /* test2.json */,
 			);
 			path = BADemo;
 			sourceTree = "<group>";
@@ -389,6 +406,9 @@
 				1FE8D9E8151A044F00EA38C1 /* BAPagerViewController.h */,
 				1FE8D9E9151A044F00EA38C1 /* BAPagerViewController.m */,
 				1FE8D9EA151A044F00EA38C1 /* BAPagerViewController.xib */,
+				1F8C535215E3D7360085C04E /* BAJSONTestViewController.h */,
+				1F8C535315E3D7360085C04E /* BAJSONTestViewController.m */,
+				1F8C535415E3D7360085C04E /* BAJSONTestViewController.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -465,6 +485,10 @@
 				1F41D23414C965570073E1FF /* BAMeshView.m */,
 				1F3CD89F14CE16E5003872C9 /* BAScrollViewProxyDelegate.h */,
 				1F3CD8A014CE16E5003872C9 /* BAScrollViewProxyDelegate.m */,
+				1F8C534A15E3AF4B0085C04E /* BAJSONViewController.h */,
+				1F8C534B15E3AF4B0085C04E /* BAJSONViewController.m */,
+				1F8C535715E3DAB60085C04E /* BATextViewController.h */,
+				1F8C535815E3DAB60085C04E /* BATextViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -661,6 +685,9 @@
 				1F726496151C750600CC51B9 /* dot-inactive.png in Resources */,
 				1F269440152ED738004A9AA9 /* BADecoratedMeshViewController.xib in Resources */,
 				1F269443152EE4EC004A9AA9 /* mesh-decoration.png in Resources */,
+				1F8C534F15E3D5350085C04E /* test1.json in Resources */,
+				1F8C535115E3D6BB0085C04E /* test2.json in Resources */,
+				1F8C535615E3D7360085C04E /* BAJSONTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,6 +767,9 @@
 				1FE8D9F0151B684200EA38C1 /* BACustomPageControl.m in Sources */,
 				1F6841EB151C6D9200ADEC62 /* BACustomPageControlViewController.m in Sources */,
 				1F26943F152ED738004A9AA9 /* BADecoratedMeshViewController.m in Sources */,
+				1F8C534C15E3AF4B0085C04E /* BAJSONViewController.m in Sources */,
+				1F8C535515E3D7360085C04E /* BAJSONTestViewController.m in Sources */,
+				1F8C535915E3DAB60085C04E /* BATextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

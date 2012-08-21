@@ -44,6 +44,7 @@
 #import "BARefreshHeaderViewController.h"
 #import "BASeparatedTableViewController.h"
 #import "BAPagerViewController.h"
+#import "BAJSONTestViewController.h"
 
 @implementation BADemoViewController {
 @private
@@ -97,6 +98,8 @@
 	[_controllerClasses addObject:@"BASeparatedTableViewController"];
 	[_labels addObject:@"Editable Table"];
 	[_controllerClasses addObject:@"BASimpleEditableTableViewController"];
+	[_labels addObject:@"JSON Viewer"];
+	[_controllerClasses addObject:@"BAJSONTestViewController"];
 }
 
 - (NSArray *)labels {
