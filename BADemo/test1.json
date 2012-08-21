@@ -7,5 +7,6 @@
 	},
 	"status" : "Once upon a time there was a great hero which lived a decent life.",
 	"description of the game using his own words" : "come get some",
-	"friends" : ["Friend A", "Friend B", "Friend C"]
+	"friends" : ["Friend A", "Friend B", "Friend C"],
+	"source" : "http:\/\/baseappkit.com\/baseappkit-logo.png"
 }

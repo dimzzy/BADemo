@@ -71,6 +71,7 @@
 		1F8C535515E3D7360085C04E /* BAJSONTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C535315E3D7360085C04E /* BAJSONTestViewController.m */; };
 		1F8C535615E3D7360085C04E /* BAJSONTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8C535415E3D7360085C04E /* BAJSONTestViewController.xib */; };
 		1F8C535915E3DAB60085C04E /* BATextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C535815E3DAB60085C04E /* BATextViewController.m */; };
+		1F8C538015E443E60085C04E /* BAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C537F15E443E60085C04E /* BAWebViewController.m */; };
 		1F8E7F18139FA49600D99164 /* BAFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E7F17139FA49600D99164 /* BAFormViewController.m */; };
 		1F8E7F1A139FA4BA00D99164 /* BAFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8E7F19139FA4BA00D99164 /* BAFormViewController.xib */; };
 		1F8E7F21139FC2D500D99164 /* BAKeyboardTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E7F20139FC2D500D99164 /* BAKeyboardTracker.m */; };
@@ -234,6 +235,8 @@
 		1F8C535415E3D7360085C04E /* BAJSONTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAJSONTestViewController.xib; sourceTree = "<group>"; };
 		1F8C535715E3DAB60085C04E /* BATextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATextViewController.h; sourceTree = "<group>"; };
 		1F8C535815E3DAB60085C04E /* BATextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATextViewController.m; sourceTree = "<group>"; };
+		1F8C537E15E443E60085C04E /* BAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAWebViewController.h; sourceTree = "<group>"; };
+		1F8C537F15E443E60085C04E /* BAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAWebViewController.m; sourceTree = "<group>"; };
 		1F8E7F16139FA49600D99164 /* BAFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAFormViewController.h; sourceTree = "<group>"; };
 		1F8E7F17139FA49600D99164 /* BAFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAFormViewController.m; sourceTree = "<group>"; };
 		1F8E7F19139FA4BA00D99164 /* BAFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAFormViewController.xib; sourceTree = "<group>"; };
@@ -489,6 +492,8 @@
 				1F8C534B15E3AF4B0085C04E /* BAJSONViewController.m */,
 				1F8C535715E3DAB60085C04E /* BATextViewController.h */,
 				1F8C535815E3DAB60085C04E /* BATextViewController.m */,
+				1F8C537E15E443E60085C04E /* BAWebViewController.h */,
+				1F8C537F15E443E60085C04E /* BAWebViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -770,6 +775,7 @@
 				1F8C534C15E3AF4B0085C04E /* BAJSONViewController.m in Sources */,
 				1F8C535515E3D7360085C04E /* BAJSONTestViewController.m in Sources */,
 				1F8C535915E3DAB60085C04E /* BATextViewController.m in Sources */,
+				1F8C538015E443E60085C04E /* BAWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
