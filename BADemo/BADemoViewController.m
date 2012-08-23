@@ -45,6 +45,7 @@
 #import "BASeparatedTableViewController.h"
 #import "BAPagerViewController.h"
 #import "BAJSONTestViewController.h"
+#import "BANetworkReachabilityViewController.h"
 
 @implementation BADemoViewController {
 @private
@@ -100,6 +101,8 @@
 	[_controllerClasses addObject:@"BASimpleEditableTableViewController"];
 	[_labels addObject:@"JSON Viewer"];
 	[_controllerClasses addObject:@"BAJSONTestViewController"];
+	[_labels addObject:@"Network Reachability"];
+	[_controllerClasses addObject:@"BANetworkReachabilityViewController"];
 }
 
 - (NSArray *)labels {

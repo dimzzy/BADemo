@@ -28,6 +28,10 @@
 		1F4B38E6138E704D003FE58C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F4B38DE138E704D003FE58C /* InfoPlist.strings */; };
 		1F4B38E8138E704D003FE58C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4B38E1138E704D003FE58C /* main.m */; };
 		1F4B38E9138E704D003FE58C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4B38E2138E704D003FE58C /* MainWindow.xib */; };
+		1F54160315E63EE000805699 /* BANetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F54160215E63EE000805699 /* BANetworkReachability.m */; };
+		1F54160615E6405500805699 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F54160515E6405500805699 /* SystemConfiguration.framework */; };
+		1F54161F15E6B3A200805699 /* BANetworkReachabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F54161D15E6B3A200805699 /* BANetworkReachabilityViewController.m */; };
+		1F54162015E6B3A200805699 /* BANetworkReachabilityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F54161E15E6B3A200805699 /* BANetworkReachabilityViewController.xib */; };
 		1F56247013B243A2004DF703 /* BAGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56246E13B243A2004DF703 /* BAGradientView.m */; };
 		1F56247513B243DF004DF703 /* BAGradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56247313B243DF004DF703 /* BAGradientViewController.m */; };
 		1F56247613B243DF004DF703 /* BAGradientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F56247413B243DF004DF703 /* BAGradientViewController.xib */; };
@@ -160,6 +164,12 @@
 		1F4B38E0138E704D003FE58C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F4B38E1138E704D003FE58C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F4B38E2138E704D003FE58C /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		1F54160115E63EE000805699 /* BANetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetworkReachability.h; sourceTree = "<group>"; };
+		1F54160215E63EE000805699 /* BANetworkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANetworkReachability.m; sourceTree = "<group>"; };
+		1F54160515E6405500805699 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1F54161C15E6B3A200805699 /* BANetworkReachabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetworkReachabilityViewController.h; sourceTree = "<group>"; };
+		1F54161D15E6B3A200805699 /* BANetworkReachabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANetworkReachabilityViewController.m; sourceTree = "<group>"; };
+		1F54161E15E6B3A200805699 /* BANetworkReachabilityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BANetworkReachabilityViewController.xib; sourceTree = "<group>"; };
 		1F56246D13B243A2004DF703 /* BAGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAGradientView.h; sourceTree = "<group>"; };
 		1F56246E13B243A2004DF703 /* BAGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAGradientView.m; sourceTree = "<group>"; };
 		1F56247213B243DF004DF703 /* BAGradientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAGradientViewController.h; sourceTree = "<group>"; };
@@ -320,6 +330,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F54160615E6405500805699 /* SystemConfiguration.framework in Frameworks */,
 				1F7F1009138F00D800E62046 /* QuartzCore.framework in Frameworks */,
 				1FC7B7EE138E592800900EA2 /* UIKit.framework in Frameworks */,
 				1FC7B7F0138E592800900EA2 /* Foundation.framework in Frameworks */,
@@ -412,6 +423,9 @@
 				1F8C535215E3D7360085C04E /* BAJSONTestViewController.h */,
 				1F8C535315E3D7360085C04E /* BAJSONTestViewController.m */,
 				1F8C535415E3D7360085C04E /* BAJSONTestViewController.xib */,
+				1F54161C15E6B3A200805699 /* BANetworkReachabilityViewController.h */,
+				1F54161D15E6B3A200805699 /* BANetworkReachabilityViewController.m */,
+				1F54161E15E6B3A200805699 /* BANetworkReachabilityViewController.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -511,6 +525,8 @@
 				1F980056138E892700B91C2C /* BAPersistentCache.m */,
 				1F2C5F3D1473D5EB00FBB1E5 /* BANetwork.h */,
 				1F2C5F3E1473D5EB00FBB1E5 /* BANetwork.m */,
+				1F54160115E63EE000805699 /* BANetworkReachability.h */,
+				1F54160215E63EE000805699 /* BANetworkReachability.m */,
 				1F980057138E892700B91C2C /* BADataLoader.h */,
 				1F980058138E892700B91C2C /* BADataLoader.m */,
 				1F980059138E892700B91C2C /* BAJSONLoader.h */,
@@ -564,6 +580,7 @@
 		1FC7B7EC138E592800900EA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F54160515E6405500805699 /* SystemConfiguration.framework */,
 				1F7F1008138F00D800E62046 /* QuartzCore.framework */,
 				1FC7B7ED138E592800900EA2 /* UIKit.framework */,
 				1FC7B7EF138E592800900EA2 /* Foundation.framework */,
@@ -693,6 +710,7 @@
 				1F8C534F15E3D5350085C04E /* test1.json in Resources */,
 				1F8C535115E3D6BB0085C04E /* test2.json in Resources */,
 				1F8C535615E3D7360085C04E /* BAJSONTestViewController.xib in Resources */,
+				1F54162015E6B3A200805699 /* BANetworkReachabilityViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,6 +794,8 @@
 				1F8C535515E3D7360085C04E /* BAJSONTestViewController.m in Sources */,
 				1F8C535915E3DAB60085C04E /* BATextViewController.m in Sources */,
 				1F8C538015E443E60085C04E /* BAWebViewController.m in Sources */,
+				1F54160315E63EE000805699 /* BANetworkReachability.m in Sources */,
+				1F54161F15E6B3A200805699 /* BANetworkReachabilityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
